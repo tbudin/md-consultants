@@ -18,12 +18,12 @@ export default function Navigation() {
           </li>
           <li>
             <Link href="/about">
-              <a className={router.pathname === "/" ? "active" : null}>About</a>
+              <a className={router.pathname === "/about-us" ? "active" : null}>About</a>
             </Link>
           </li>
           <li>
             <Link href="/contact-us">
-              <a className={router.pathname === "/" ? "active" : null}>Contact us</a>
+              <a className={router.pathname === "/contact-us" ? "active" : null}>Contact us</a>
             </Link>
           </li>
           <li>
@@ -53,7 +53,7 @@ export default function Navigation() {
               padding: 0;
               position: fixed;
               top: 0;
-              background-color: #fff;
+              background-color: #faefd4;
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -73,8 +73,11 @@ export default function Navigation() {
             li:last-child {
               margin-bottom: 0;
             }
+            a {
+              color: #1b365d;
+            }
             .active {
-              color: #222;
+              color: #fffbf0;
             }
 
             @media (min-width: 769px) {
@@ -88,10 +91,14 @@ export default function Navigation() {
                 top: auto;
                 display: block;
                 transform: translateY(0);
+                background-color: transparent;
               }
               li {
                 font-size: 1rem;
                 padding: 0;
+              }
+              a {
+                color: inherit;
               }
             }
           `}

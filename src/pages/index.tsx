@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
-import { SocialList } from "../components/SocialList";
 
 export default function Index() {
   return (
@@ -10,24 +9,20 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <div className="container">
-        <div>
-          <h1>
-            Hi, We're Next.js & Netlify<span className="fancy">.</span>
+      <section className="hero">
+        <div className="heroInner">
+          <img className="heroSVG" src="/images/illustrations/globe.svg" alt="globe wireframe"></img>
+          <h1 className="heroHeading">
+            <span>MD Consultants</span><br/>
+            We assist international organizations in auditing global financial institutions.
           </h1>
-          <span className="handle">@nextjs-netlify-blog</span>
-          <h2>A blog template with Next.js and Netlify.</h2>
-          <SocialList />
+          <div className="heroContent">
+            <p>Internationally recognized third-party for auditing financial institutions.</p>
+            <button>Book a 15-min call with us</button>
+          </div>
         </div>
-      </div>
+      </section>
       <style jsx>{`
-        .container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex: 1 1 auto;
-          padding: 0 1.5rem;
-        }
         h1 {
           font-size: 2.5rem;
           margin: 0;
@@ -38,14 +33,44 @@ export default function Index() {
           font-weight: 400;
           line-height: 1.25;
         }
-        .fancy {
-          color: #15847d;
+        .hero {
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          overflow-x: hidden;
         }
-        .handle {
-          display: inline-block;
-          margin-top: 0.275em;
-          color: #9b9b9b;
-          letter-spacing: 0.05em;
+        .heroInner {
+          position: relative;
+          border: 1px solid #d9c89e;
+          padding: 2rem;
+          margin: 2rem;
+        }
+        .heroHeading {
+          font-size: 3rem;
+          z-index: 1;
+        }
+        .heroHeading span {
+          font-size: 3rem;
+          color: #faefd4;
+          -webkit-text-fill-color: transparent;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: #d9c89e;
+        }
+        .heroContent {
+          font-size: 1.25rem;
+          max-width: 65ch;
+          margin-left: 0;
+          margin-right: auto;
+          z-index: 1;
+        }
+        .heroSVG {
+          width: 30%;
+          position: absolute;
+          z-index: 0;
+          bottom: 0;
+          right: 0;
+          transform: translateX(40%) translateY(80%);
         }
 
         @media (min-width: 769px) {
@@ -54,6 +79,27 @@ export default function Index() {
           }
           h2 {
             font-size: 2.25rem;
+          }
+          .heroInner {
+            min-height: 50vh;
+            margin: auto;
+            max-width: 1120px;
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            grid-auto-rows: minmax(120px, auto);
+            align-items: center;
+          }
+          .heroHeading {
+            grid-column: 1 / 2;
+            grid-row: 1;
+          }
+          .heroContent {
+            grid-column: 2 / 3;
+            grid-row: 2;
+            margin-left: auto;
+            margin-right: 0;
           }
         }
       `}</style>
