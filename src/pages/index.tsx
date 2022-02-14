@@ -13,8 +13,7 @@ export default function Index() {
         <div className="heroInner">
           <img className="heroSVG" src="/images/illustrations/globe.svg" alt="globe wireframe"></img>
           <h1 className="heroHeading">
-            <span>MD Consultants</span><br/>
-            We assist international organizations in auditing global financial institutions.
+            We assist international organizations auditing global financial institutions.
           </h1>
           <div className="heroContent">
             <p>Internationally recognized third-party for auditing financial institutions.</p>
@@ -38,24 +37,16 @@ export default function Index() {
           display: flex;
           justify-content: center;
           align-content: center;
-          overflow-x: hidden;
         }
         .heroInner {
           position: relative;
-          border: 1px solid #d9c89e;
           padding: 2rem;
           margin: 2rem;
         }
         .heroHeading {
           font-size: 3rem;
           z-index: 1;
-        }
-        .heroHeading span {
-          font-size: 3rem;
-          color: #faefd4;
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke-width: 1px;
-          -webkit-text-stroke-color: #d9c89e;
+          text-align: center;
         }
         .heroContent {
           font-size: 1.25rem;
@@ -92,7 +83,7 @@ export default function Index() {
             align-items: center;
           }
           .heroHeading {
-            grid-column: 1 / 2;
+            grid-column: 1 / 3;
             grid-row: 1;
           }
           .heroContent {

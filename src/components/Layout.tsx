@@ -1,12 +1,14 @@
 import Head from "next/head";
 import Navigation from "./Navigation";
+import { Footer } from "./Footer";
+import { Header } from "./Header";
 
 type Props = {
   children: React.ReactNode;
 };
 export default function Layout({ children }: Props) {
   return (
-    <div className="root">
+    <div className="wrapper">
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,22 +16,16 @@ export default function Layout({ children }: Props) {
         <link rel="apple-touch-icon" href="/icon.png" />
         <meta name="theme-color" content="#1b365d" />
       </Head>
-      <nav>
+      <header className="main-header">
+        <Header />
+      </header>
+      <nav className="main-nav">
         <Navigation />
       </nav>
-      <main>{children}</main>
-      <style jsx>
-        {`
-          .root {
-            display: block;
-            box-sizing: border-box;
-            height: 100%;
-          }
-          main {
-            min-height: 100%;
-          }
-        `}
-      </style>
+      <main className="main-content">{children}</main>
+      <footer className="main-footer">
+        <Footer />
+      </footer>
     </div>
   );
 }

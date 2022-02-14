@@ -9,7 +9,7 @@ export default function Navigation() {
   return (
     <>
       <Burger active={active} onClick={() => setActive(!active)} />
-      <div className={"container " + (active ? "active" : "")}>
+      <div className={"nav-container " + (active ? "active" : "")}>
         <ul>
           <li>
             <Link href="/">
@@ -18,12 +18,12 @@ export default function Navigation() {
           </li>
           <li>
             <Link href="/about">
-              <a className={router.pathname === "/about-us" ? "active" : null}>About</a>
+              <a className={router.pathname === "/about-us" ? "active" : null}>About Us</a>
             </Link>
           </li>
           <li>
             <Link href="/contact-us">
-              <a className={router.pathname === "/contact-us" ? "active" : null}>Contact us</a>
+              <a className={router.pathname === "/contact-us" ? "active" : null}>Contact Us</a>
             </Link>
           </li>
           <li>
@@ -33,20 +33,20 @@ export default function Navigation() {
                   router.pathname.startsWith("/posts") ? "active" : null
                 }
               >
-                Blog
+                Our Blog
               </a>
             </Link>
           </li>
         </ul>
         <style jsx>
           {`
-            .container {
+            .nav-container {
               width: 0;
             }
             ul {
               opacity: 0;
               width: 100%;
-              height: 100vh;
+              height: 100%;
               text-align: right;
               list-style: none;
               margin: 0;
@@ -74,22 +74,33 @@ export default function Navigation() {
               margin-bottom: 0;
             }
             a {
-              color: #1b365d;
+              opacity: 0.5;
+              color: #000;
             }
+            a:hover,
+            a:focus,
             .active {
-              color: #fffbf0;
+              opacity: 1;
+              color: #d9c89e
+            }
+            .active::after {
+              position: absolute;
+              transform: translateX(50%);
+              content: url(./images/icons/square-dot.svg);
             }
 
             @media (min-width: 769px) {
-              .container {
+              .nav-container {
                 width: 7rem;
                 display: block;
+                height: 100%;
               }
               ul {
                 opacity: 1;
                 width: 7rem;
-                top: auto;
-                display: block;
+                top: 0;
+                display: flex;
+                justify-content: center;
                 transform: translateY(0);
                 background-color: transparent;
               }
@@ -98,7 +109,7 @@ export default function Navigation() {
                 padding: 0;
               }
               a {
-                color: inherit;
+                color: #fdfbf7;
               }
             }
           `}

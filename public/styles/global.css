@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 html,
 body {
   font-family: 'Libre Franklin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #1b365d;
-  color: #fffbf0;
+  color: #fdfbf7;
   font-weight: 400;
   height: 100%;
 }
@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Gilda Display', Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Marcellus', Georgia, 'Times New Roman', Times, serif;
   line-height: 1.1;
 }
 
@@ -50,4 +50,54 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
+}
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "sidebar"
+    "content"
+    "cta"
+    "footer";
+}
+.main-header {
+  grid-area: header;
+}
+.main-content {
+  grid-area: content;
+}
+.main-nav {
+  grid-area: nav;
+}
+.main-side {
+  grid-area: sidebar;
+}
+.main-cta {
+  grid-area: cta;
+}
+.main-footer {
+  grid-area: footer;
+}
+@media (min-width: 581px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "sidebar sidebar"
+      "content content"
+      "cta footer";
+  }
+}
+@media (min-width: 769px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+      "nav header header"
+      "nav content sidebar"
+      "nav content sidebar"
+      "cta footer footer"
+  }
 }
