@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
@@ -22,11 +24,16 @@ export default function Index() {
         </div>
       </section>
       <section>
+        <Image
+          src="/images/financial-institutions.jpg"
+          alt="Financial institution building over a blue sky"
+          width={320}
+          height={500}
+        />
         <h2>Test</h2>
       </section>
       <style jsx>{`
         .hero {
-          height: 80%;
           display: flex;
           justify-content: center;
           align-content: center;

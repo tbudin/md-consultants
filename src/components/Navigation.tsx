@@ -97,6 +97,8 @@ export default function Navigation() {
                 justify-content: center;
                 transform: translateY(0);
                 background-color: transparent;
+                position: sticky;
+                max-height: 100vh;
               }
               li {
                 font-size: 1rem;

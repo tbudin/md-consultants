@@ -29,7 +29,7 @@ export function Header() {
         @media (min-width: 769px) {
           .headerInner {
             padding: 1rem 4rem;
-            text-align: left;
+            text-align: center;
           }
         }
       `}
