@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
