@@ -13,15 +13,14 @@ export default function TagButton({ tag }: Props) {
       <style jsx>{`
         a {
           display: inline-block;
-          border-radius: 3px;
-          background-color: rgba(21, 132, 125, 0.2);
-          color: #15847d;
+          background-color: var(--accent-color-lighter);
+          color: var(--accent-color);
           transition: background-color 0.3s ease;
           padding: 0.25em 0.5em;
         }
         a:active,
         a:hover {
-          background-color: rgba(21, 132, 125, 0.4);
+          background-color: var(--accent-color-light);
         }
       `}</style>
     </>

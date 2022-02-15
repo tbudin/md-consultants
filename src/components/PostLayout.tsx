@@ -70,23 +70,17 @@ export default function PostLayout({
               <div>
                 <Author author={getAuthor(author)} />
               </div>
+              <ul className={"tag-list"}>
+                {tags.map((it, i) => (
+                  <li key={i}>
+                    <TagButton tag={getTag(it)} />
+                  </li>
+                ))}
+              </ul>
             </div>
           </header>
           <div className={styles.content}>{children}</div>
-          <ul className={"tag-list"}>
-            {tags.map((it, i) => (
-              <li key={i}>
-                <TagButton tag={getTag(it)} />
-              </li>
-            ))}
-          </ul>
         </article>
-        <footer>
-          <div className={"social-list"}>
-            <SocialList />
-          </div>
-          <Copyright />
-        </footer>
       </div>
       <style jsx>
         {`

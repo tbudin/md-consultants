@@ -11,20 +11,65 @@ export default function Index() {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      <div className="container">
-        <div>
-          <h1>
-            Contact Us
-          </h1>
-        </div>
-      </div>
+      <section>
+        <h1>
+          Contact Us
+        </h1>
+        <form
+          name="contact"
+          method="POST"
+          action="/contact/success"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
+          <div className="hidden">
+            <label>
+              Should you fill this one? <input name="bot-field" />
+            </label>
+          </div>
+          <div>
+            <label>
+              Name: <input type="text" name="name" />
+            </label>
+          </div>
+          <div>
+            <label>
+              Email: <input type="text" name="email" />
+            </label>
+          </div>
+          <div>
+            <label>
+              Message: <textarea name="message"></textarea>
+            </label>
+          </div>
+          <div>
+            <button className="btn" type="submit">
+              <svg className="btn-svg" xmlns="http://www.w3.org/2000/svg">
+                <rect className="btn-shape" />
+              </svg>
+              <div className="btn-text">Submit</div>
+            </button>
+          </div>
+        </form>
+      </section>
       <style jsx>{`
-        .container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex: 1 1 auto;
-          padding: 0 1.5rem;
+        form {
+          max-width: 320px;
+          margin: 2rem auto;
+        }
+        input,
+        textarea {
+          display: block;
+          width: 100%;
+          margin: 0.5rem auto 1.5rem;
+          outline: none;
+          border: 1px solid var(--text-color);
+          border-radius: 0;
+          padding: 0.5em 0.5em;
+        }
+        input:focus,
+        textarea:focus {
+          border: 1px solid var(--accent-color);
         }
         h1 {
           font-size: 2.5rem;
@@ -35,6 +80,10 @@ export default function Index() {
           font-size: 1.75rem;
           font-weight: 400;
           line-height: 1.25;
+        }
+        .hidden {
+          display: none; 
+          visibility: hidden; 
         }
 
         @media (min-width: 769px) {

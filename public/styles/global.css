@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
+:root {
+  --font-heading: 'Marcellus', Georgia, 'Times New Roman', Times, serif;
+  --font-body: 'Libre Franklin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --bg-color: #fdfbf7;
+  --text-color: #1b365d;
+  --accent-color: #D4AF37;
+  --accent-color-light: #f9edc8;
+  --accent-color-lighter: #fcf6e1;
+  ;
+  --black: #000;
+}
+
 html,
 body {
-  font-family: 'Libre Franklin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1b365d;
-  color: #fdfbf7;
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--bg-color);
   font-weight: 400;
   height: 100%;
 }
@@ -20,37 +32,94 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Marcellus', Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--font-heading);
   line-height: 1.1;
+}
+h1 {
+  font-size: 2.5rem;
 }
 
 a {
-  color: #faefd4;
+  color: var(--text-color);
+  font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 a:active,
 a:hover {
-  color: #d9c89e;
+  color: var(--accent-color);
 }
 
-.youtube-container {
+.btn {
   position: relative;
+  font-family: var(--font-heading);
+  text-align: center;
+  margin: 1rem auto;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
   width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  margin-bottom: 50px;
 }
-
-.youtube-container iframe {
+.btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 4px;
+  background-color: var(--accent-color);
+}
+.btn-svg {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
 }
+.btn-shape {
+  fill: transparent;
+  stroke-dasharray: 50% 200%;
+  stroke-dashoffset: -200%;
+  stroke-width: 8px;
+  stroke: transparent;
+  width: 100%;
+  height: 100%;
+}
+.btn:hover::after {
+  background-color: transparent;
+}
+.btn:hover .btn-shape {
+  stroke: var(--accent-color);
+  animation: 0.5s draw linear forwards;
+}
+.btn-text {
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+}
+@keyframes draw {
+  0% {
+    stroke-dasharray: 50% 200%;
+    stroke-dashoffset: -200%;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 400%;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
 .wrapper {
   display: grid;
   gap: 20px;
@@ -58,15 +127,15 @@ a:hover {
     "header"
     "nav"
     "sidebar"
-    "content"
-    "cta"
+    "main"
     "footer";
 }
 .main-header {
   grid-area: header;
 }
 .main-content {
-  grid-area: content;
+  min-height: 90vh;
+  grid-area: main;
 }
 .main-nav {
   grid-area: nav;
@@ -74,30 +143,34 @@ a:hover {
 .main-side {
   grid-area: sidebar;
 }
-.main-cta {
-  grid-area: cta;
-}
 .main-footer {
   grid-area: footer;
 }
 @media (min-width: 581px) {
   .wrapper {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "header header"
-      "nav nav"
-      "sidebar sidebar"
-      "content content"
-      "cta footer";
+      "header"
+      "nav"
+      "sidebar"
+      "main"
+      "footer";
   }
 }
 @media (min-width: 769px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
   .wrapper {
+    transition: 0.5s ease-in-out;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "nav header header"
-      "nav content sidebar"
-      "nav content sidebar"
-      "cta footer footer"
+      "nav main sidebar"
+      "nav main sidebar"
+      "footer footer footer"
   }
 }

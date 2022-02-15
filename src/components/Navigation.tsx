@@ -64,24 +64,18 @@ export default function Navigation() {
             .active ul {
               opacity: 1;
               transform: translateY(0);
+              padding-right: 2rem;
             }
             li {
               margin-bottom: 1.75rem;
               font-size: 2rem;
-              padding: 0 1.5rem 0 0;
+              padding: 0 3rem 0 0;
             }
             li:last-child {
               margin-bottom: 0;
             }
-            a {
-              opacity: 0.5;
-              color: #000;
-            }
-            a:hover,
-            a:focus,
             .active {
-              opacity: 1;
-              color: #d9c89e
+              color: var(--accent-color);
             }
             .active::after {
               position: absolute;
@@ -107,9 +101,6 @@ export default function Navigation() {
               li {
                 font-size: 1rem;
                 padding: 0;
-              }
-              a {
-                color: #fdfbf7;
               }
             }
           `}

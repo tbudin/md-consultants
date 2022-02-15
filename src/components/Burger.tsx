@@ -22,9 +22,9 @@ export default function Burger({ active, onClick }: Props) {
           .meat {
             position: absolute;
             width: 28px;
-            height: 2px;
-            background: #d9c89e;
-            top: calc(50% - 2px / 2);
+            height: 4px;
+            background: var(--accent-color);
+            top: calc(50% - 4px / 2);
             left: calc(50% - 28px / 2);
             transition: all 150ms ease-in;
           }
