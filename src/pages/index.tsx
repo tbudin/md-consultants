@@ -23,14 +23,18 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <section>
-        <Image
-          src="/images/financial-institutions.jpg"
-          alt="Financial institution building over a blue sky"
-          width={320}
-          height={500}
-        />
-        <h2>Test</h2>
+      <section className="subHero">
+        <div className="subHero-img">
+          <Image
+            src="/images/financial-institutions.jpg"
+            alt="Financial institution building over a blue sky"
+            width={320}
+            height={500}
+            className="imageCover"
+          />
+        </div>
+        <h2 className="subHero-heading">Main heading</h2>
+        <p className="subHero-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere officia hic perspiciatis fugiat asperiores dolorem, velit eaque optio temporibus totam mollitia cum consequatur delectus voluptatem necessitatibus, accusamus accusantium vero quasi.</p>
       </section>
       <style jsx>{`
         .hero {
@@ -55,6 +59,9 @@ export default function Index() {
           margin-right: auto;
           z-index: 1;
         }
+        .imageCover {
+          object-fit: cover;
+        }
 
         @media (min-width: 1025px) {
           .heroInner {
@@ -77,6 +84,24 @@ export default function Index() {
             grid-row: 2;
             margin-left: auto;
             margin-right: 0;
+          }
+          .subHero {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
+            grid-auto-rows: minmax(120px, auto);
+          }
+          .subHero-heading {
+            grid-column: 1 / 4;
+            grid-row: 1;
+          }
+          .subHero-img {
+            grid-column: 3 / 5;
+            grid-row: 1 / 4;
+          }
+          .subHero-content {
+            grid-column: 5 / 7;
+            grid-row: 3;
           }
         }
       `}</style>
