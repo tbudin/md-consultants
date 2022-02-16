@@ -6,6 +6,7 @@
   --font-body: 'Libre Franklin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --bg-color: #fdfbf7;
   --text-color: #1b365d;
+  --text-color-lighter: #e5ecf7;
   --accent-color: #D4AF37;
   --accent-color-light: #f9edc8;
   --accent-color-lighter: #fcf6e1;
@@ -82,6 +83,16 @@ h6 {
 }
 .opacity-70 {
   opacity: 0.70;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.hidden {
+  display: none; 
+  visibility: hidden; 
 }
 
 /* Logo */
@@ -210,6 +221,11 @@ a:hover {
   max-width: 1124px;
   margin: 0 auto;
 }
+.heading-center {
+  text-align: center;
+  max-width: 65ch;
+  margin: 0 auto 4rem;
+}
 .site-row {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -293,7 +309,6 @@ a:hover {
     padding-bottom: 2.5rem;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: flex-start;
   }
   .site-row:nth-child(even) {
