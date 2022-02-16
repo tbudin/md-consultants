@@ -1,5 +1,5 @@
 import React from "react";
-import { Lockup } from "../lockup";
+import { Lockup } from "../Lockup";
 
 export function Header() {
   return (

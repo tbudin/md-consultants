@@ -1,6 +1,6 @@
 import Link from "next/link";
 import LinkedIn from "../../assets/linkedin-alt.svg";
-import { Lockup } from "../lockup";
+import { Lockup } from "../Lockup";
 import config from "../../lib/config";
 
 export function Footer() {
