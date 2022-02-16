@@ -8,7 +8,7 @@ type Props = {
 };
 export default function Layout({ children }: Props) {
   return (
-    <div className="wrapper">
+    <div className="site-wrapper">
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,14 +16,14 @@ export default function Layout({ children }: Props) {
         <link rel="apple-touch-icon" href="/icon.png" />
         <meta name="theme-color" content="#1b365d" />
       </Head>
-      <header className="main-header">
+      <header className="site-header">
         <Header />
       </header>
-      <nav className="main-nav">
+      <nav className="site-nav">
         <Navigation />
       </nav>
-      <main className="main-content">{children}</main>
-      <footer className="main-footer">
+      <main className="site-content">{children}</main>
+      <footer className="site-footer">
         <Footer />
       </footer>
     </div>

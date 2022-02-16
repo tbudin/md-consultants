@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
@@ -21,7 +21,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <section className="subHero">
+      <section className="site-section subHero">
         <div className="subHero-img">
           <img
             src="/images/financial-institutions.jpg"
@@ -55,13 +55,10 @@ export default function Index() {
           margin-right: auto;
           z-index: 1;
         }
-        .imageCover {
-          object-fit: cover;
-        }
 
         @media (min-width: 1025px) {
           .heroInner {
-            min-height: 50vh;
+            min-height: 80vh;
             margin: auto;
             max-width: 1120px;
             padding: 4rem;
@@ -92,6 +89,10 @@ export default function Index() {
             grid-row: 1;
           }
           .subHero-img {
+            aspect-ratio: 3 / 4;
+            max-width: 500px;
+            padding: 0.25rem;
+            border: 4px solid var(--accent-color);
             grid-column: 3 / 5;
             grid-row: 1 / 4;
           }

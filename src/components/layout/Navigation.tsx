@@ -17,7 +17,7 @@ export default function Navigation() {
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link href="/about-us">
               <a className={router.pathname === "/about-us" ? "active" : null}>About Us</a>
             </Link>
           </li>

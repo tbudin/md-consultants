@@ -1,9 +1,9 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import Layout from "../../../components/Layout";
+import Layout from "../../../components/layout/Layout";
 import BasicMeta from "../../../components/meta/BasicMeta";
 import OpenGraphMeta from "../../../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../../../components/meta/TwitterCardMeta";
-import PostList from "../../../components/PostList";
+import PostList from "../../../components/posts/PostList";
 import config from "../../../lib/config";
 import { countPosts, listPostContent, PostContent } from "../../../lib/posts";
 import { listTags, TagContent } from "../../../lib/tags";

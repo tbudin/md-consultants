@@ -1,8 +1,8 @@
 import React from "react";
 import { PostContent } from "../lib/posts";
 import { TagContent } from "../lib/tags";
-import PostItem from "./PostItem";
-import Pagination from "./Pagination";
+import PostItem from "./posts/PostItem";
+import Pagination from "./posts/Pagination";
 
 type Props = {
   posts: PostContent[];
