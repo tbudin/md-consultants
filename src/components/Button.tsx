@@ -2,11 +2,12 @@ import Link from "next/link";
 
 type Props = {
   href: string;
+  type: string;
   children;
 };
-export default function ButtonLink({ href, children }: Props) {
+export default function ButtonLink({ href, type, children }: Props) {
   return (
-    <div className="btn">
+    <div className={`btn ${type}`}>
       <svg className="btn-svg" xmlns="http://www.w3.org/2000/svg">
         <rect className="btn-shape" />
       </svg>

@@ -17,20 +17,64 @@ export default function Index() {
           </h1>
           <div className="heroContent">
             <p>Internationally recognized third-party for auditing financial institutions.</p>
-            <ButtonLink href="/" children={"Book a 15-min call"}></ButtonLink>
+            <ButtonLink type="" href="/" children={"Book a 15-min call"}></ButtonLink>
           </div>
         </div>
       </section>
       <section className="site-section subHero">
-        <div className="subHero-img">
+        <div className="subHero-img image-wrap">
           <img
             src="/images/financial-institutions.jpg"
             alt="Financial institution building over a blue sky"
             className="imageCover"
           />
         </div>
-        <h2 className="subHero-heading">Main heading</h2>
+        <h2 className="subHero-heading">Section heading</h2>
         <p className="subHero-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere officia hic perspiciatis fugiat asperiores dolorem, velit eaque optio temporibus totam mollitia cum consequatur delectus voluptatem necessitatibus, accusamus accusantium vero quasi.</p>
+      </section>
+      <section className="site-section">
+        <div className="site-container">
+          <div className="site-row">
+            <div className="row-content">
+              <h2>Section heading</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi omnis voluptate itaque, est aperiam alias dolorem laboriosam. Quos odit rem molestias et inventore dolorum repudiandae, vel rerum. Dolores, perspiciatis.</p>
+            </div>
+            <div className="row-illustration">
+              <div className="image-wrap">
+                <img
+                  src="/images/financial-institutions.jpg"
+                  alt="Financial institution building over a blue sky"
+                  className="imageCover"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="site-row">
+            <div className="row-content">
+              <h2>Section heading</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi omnis voluptate itaque, est aperiam alias dolorem laboriosam. Quos odit rem molestias et inventore dolorum repudiandae, vel rerum. Dolores, perspiciatis.</p>
+            </div>
+            <div className="row-illustration">
+              <div className="image-wrap">
+                <img
+                  src="/images/financial-institutions.jpg"
+                  alt="Financial institution building over a blue sky"
+                  className="imageCover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="site-section">
+        <div className="site-container">
+          <div className="site-row site-cta">
+            <h2 className="row-content">SectionHeading</h2>
+            <div className="row-illustration">
+              <ButtonLink type="white" href="/" children={"Book a 15-min call"}></ButtonLink>
+            </div>
+          </div>
+        </div>
       </section>
       <style jsx>{`
         .hero {
@@ -89,10 +133,6 @@ export default function Index() {
             grid-row: 1;
           }
           .subHero-img {
-            aspect-ratio: 3 / 4;
-            max-width: 500px;
-            padding: 0.25rem;
-            border: 4px solid var(--accent-color);
             grid-column: 3 / 5;
             grid-row: 1 / 4;
           }

@@ -5,7 +5,7 @@ type Props = {
 };
 export default function Date({ date }: Props) {
   return (
-    <time dateTime={formatISO(date)}>
+    <time className="text-xs" dateTime={formatISO(date)}>
       <span>{format(date, "LLLL d, yyyy")}</span>
       <style jsx>
         {`

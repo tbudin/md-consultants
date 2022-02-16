@@ -85,13 +85,12 @@ export default function Navigation() {
 
             @media (min-width: 769px) {
               .nav-container {
-                width: 7rem;
+                width: 100%;
                 display: block;
                 height: 100%;
               }
               ul {
                 opacity: 1;
-                width: 7rem;
                 top: 0;
                 display: flex;
                 justify-content: center;
@@ -102,7 +101,6 @@ export default function Navigation() {
               }
               li {
                 font-size: 1rem;
-                padding: 0;
               }
             }
           `}
