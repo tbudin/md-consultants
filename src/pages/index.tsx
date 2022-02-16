@@ -21,16 +21,18 @@ export default function Index() {
           </div>
         </div>
       </section>
-      <section className="site-section subHero">
-        <div className="subHero-img image-wrap">
-          <img
-            src="/images/financial-institutions.jpg"
-            alt="Financial institution building over a blue sky"
-            className="imageCover"
-          />
+      <section className="site-section">
+        <div className="site-container subHero">
+          <div className="subHero-img image-wrap">
+            <img
+              src="/images/financial-institutions.jpg"
+              alt="Financial institution building over a blue sky"
+              className="imageCover"
+            />
+          </div>
+          <h2 className="subHero-heading">Section heading</h2>
+          <p className="subHero-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere officia hic perspiciatis fugiat asperiores dolorem, velit eaque optio temporibus totam mollitia cum consequatur delectus voluptatem necessitatibus, accusamus accusantium vero quasi.</p>
         </div>
-        <h2 className="subHero-heading">Section heading</h2>
-        <p className="subHero-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere officia hic perspiciatis fugiat asperiores dolorem, velit eaque optio temporibus totam mollitia cum consequatur delectus voluptatem necessitatibus, accusamus accusantium vero quasi.</p>
       </section>
       <section className="site-section">
         <div className="site-container">

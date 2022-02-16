@@ -83,7 +83,7 @@ export default function Navigation() {
               content: url(./images/icons/square-dot.svg);
             }
 
-            @media (min-width: 769px) {
+            @media (min-width: 1025px) {
               .nav-container {
                 width: 100%;
                 display: block;

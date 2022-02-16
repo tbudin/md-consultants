@@ -18,12 +18,14 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   font-weight: 400;
-  height: 100%;
+  /* height: 100%;
+  width: 100%; */
 }
 
-#__next {
+/* #__next {
   height: 100%;
-}
+  width: 100%;
+} */
 
 h1,
 h2,
@@ -204,8 +206,7 @@ a:hover {
   padding: 4rem 0;
 }
 .site-container {
-  padding: 0.75rem 0;
-  width: 100%;
+  padding: 0 1rem;
   max-width: 1124px;
   margin: 0 auto;
 }
@@ -225,33 +226,23 @@ a:hover {
   padding: 2rem;
   background-color: var(--text-color);
   color: var(--bg-color);
+  text-align: center;
 }
-
-.site-wrapper {
-  display: grid;
-  gap: 20px;
-  grid-template-areas:
-    "header"
-    "nav"
-    "sidebar"
-    "main"
-    "footer";
-}
-.site-header {
+/* .site-header {
   grid-area: header;
-}
+} */
 .site-content {
   min-height: 90vh;
-  grid-area: main;
+  /* grid-area: main; */
 }
-.site-nav {
+/* .site-nav {
   grid-area: nav;
 }
 .site-side {
   grid-area: sidebar;
-}
+} */
 .site-footer {
-  grid-area: footer;
+  /* grid-area: footer; */
   background-color: var(--text-color);
   color: var(--bg-color);
   padding: 4rem 0;
@@ -290,21 +281,10 @@ a:hover {
   h2 {
     font-size: 2.25rem;
   }
-  .site-wrapper {
-    transition: 0.5s ease-in-out;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-template-areas:
-      "nav header sidebar"
-      "nav main sidebar"
-      "nav main sidebar"
-      "footer footer footer"
-  }
   .site-section {
     padding: 4rem 0;
   }
   .site-container {
-    padding: 0.75rem 0;
-    width: 100%;
     max-width: 1124px;
     margin: 0 auto;
   }
@@ -332,10 +312,38 @@ a:hover {
     padding-left: 2rem;
     margin-left: auto;
   }
+  .site-cta {
+    text-align: left;
+  }
 }
 /* Desktops Up */
 @media (min-width: 1025px) {
   .site-container {
     padding: 0;
+  }
+  .site-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas:
+      "nav header sidebar"
+      "nav main sidebar"
+      "nav main sidebar"
+      "footer footer footer"
+  }
+  .site-header {
+    grid-area: header;
+  }
+  .site-content {
+    grid-area: main;
+  }
+  .site-nav {
+    grid-area: nav;
+  }
+  .site-side {
+    grid-area: sidebar;
+  }
+  .site-footer {
+    grid-area: footer;
   }
 }
