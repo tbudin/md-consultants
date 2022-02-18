@@ -1,30 +1,43 @@
-export function Timeline({}) {
+type Props = {
+  heading: string;
+  paragraph: string;
+};
+
+export function Timeline({ heading, paragraph }: Props) {
   return (
-    <ul className="timeline">
-      <li className="timeline-item">
-        <div className="no">
-          <h3 className="nu text-md mt-0">Date 1</h3>
-          <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo, dolorum culpa nemo atque tempora perferendis ut dolores mollitia rerum voluptatem, iste expedita omnis natus voluptate distinctio vitae, maiores quisquam.</div>
+    <section className="site-section">
+      <div className="site-container">
+        <div className="heading-center">
+          <h2>{ heading }</h2>
+          <p>{ paragraph }</p>
         </div>
-      </li>
-      <li className="timeline-item">
-        <div className="no">
-          <h3 className="nu text-md mt-0">Date 2</h3>
-          <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit ad impedit perspiciatis, quae quas ipsam id repellat. Fugiat tempore dicta, voluptate aspernatur expedita hic sequi sint quod ea quo!</div>
-        </div>
-      </li>
-      <li className="timeline-item">
-        <div className="no">
-          <h3 className="nu text-md mt-0">Date 3</h3>
-          <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo, dolorum culpa nemo atque tempora perferendis ut dolores mollitia rerum voluptatem, iste expedita omnis natus voluptate distinctio vitae, maiores quisquam.</div>
-        </div>
-      </li>
-      <li className="timeline-item">
-        <div className="no">
-          <h3 className="nu text-md mt-0">Date 4</h3>
-          <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit ad impedit perspiciatis, quae quas ipsam id repellat. Fugiat tempore dicta, voluptate aspernatur expedita hic sequi sint quod ea quo!</div>
-        </div>
-      </li>
+        <ul className="timeline">
+          <li className="timeline-item">
+            <div className="no">
+              <h3 className="nu text-md mt-0">Date 1</h3>
+              <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo, dolorum culpa nemo atque tempora perferendis ut dolores mollitia rerum voluptatem, iste expedita omnis natus voluptate distinctio vitae, maiores quisquam.</div>
+            </div>
+          </li>
+          <li className="timeline-item">
+            <div className="no">
+              <h3 className="nu text-md mt-0">Date 2</h3>
+              <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit ad impedit perspiciatis, quae quas ipsam id repellat. Fugiat tempore dicta, voluptate aspernatur expedita hic sequi sint quod ea quo!</div>
+            </div>
+          </li>
+          <li className="timeline-item">
+            <div className="no">
+              <h3 className="nu text-md mt-0">Date 3</h3>
+              <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo, dolorum culpa nemo atque tempora perferendis ut dolores mollitia rerum voluptatem, iste expedita omnis natus voluptate distinctio vitae, maiores quisquam.</div>
+            </div>
+          </li>
+          <li className="timeline-item">
+            <div className="no">
+              <h3 className="nu text-md mt-0">Date 4</h3>
+              <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit ad impedit perspiciatis, quae quas ipsam id repellat. Fugiat tempore dicta, voluptate aspernatur expedita hic sequi sint quod ea quo!</div>
+            </div>
+          </li>
+        </ul>
+      </div>
       <style jsx>{`
         .timeline {
           list-style: none;
@@ -95,6 +108,6 @@ export function Timeline({}) {
           }
         }
       `}</style>
-    </ul>
+    </section>
   );
 }
