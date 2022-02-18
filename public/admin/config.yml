@@ -128,7 +128,7 @@ collections:
                 label: Features
                 widget: list
                 label_singular: field
-                summary: "{{field.heading}}"
+                summary: "{{fields.heading}}"
                 fields:
                   - { label: Heading, name: heading, widget: string }
                   - { label: Paragraph, name: paragraph, widget: string }
