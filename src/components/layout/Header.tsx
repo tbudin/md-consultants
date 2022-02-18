@@ -11,13 +11,13 @@ export function Header() {
           <a>Home</a>
         </Link>
         <Link href="/about-us">
-          <a>About Us</a>
+          <a>About</a>
         </Link>
         <Link href="/contact-us">
-          <a>Contact Us</a>
+          <a>Contact</a>
         </Link>
         <Link href="/posts">
-          <a>Our Blog</a>
+          <a>Blog</a>
         </Link>
       </nav>
       <style jsx>

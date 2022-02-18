@@ -18,12 +18,12 @@ export default function Navigation() {
           </li>
           <li>
             <Link href="/about-us">
-              <a className={router.pathname === "/about-us" ? "active" : null}>About Us</a>
+              <a className={router.pathname === "/about-us" ? "active" : null}>About</a>
             </Link>
           </li>
           <li>
             <Link href="/contact-us">
-              <a className={router.pathname === "/contact-us" ? "active" : null}>Contact Us</a>
+              <a className={router.pathname === "/contact-us" ? "active" : null}>Contact</a>
             </Link>
           </li>
           <li>
@@ -33,7 +33,7 @@ export default function Navigation() {
                   router.pathname.startsWith("/posts") ? "active" : null
                 }
               >
-                Our Blog
+                Blog
               </a>
             </Link>
           </li>

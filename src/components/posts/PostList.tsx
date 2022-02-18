@@ -15,7 +15,7 @@ type Props = {
 };
 export default function PostList({ posts, tags, pagination }: Props) {
   return (
-    <div className={"container"}>
+    <div className={"blog"}>
       <div className={"posts"}>
         <ul className={"post-list"}>
           {posts.map((it, i) => (
@@ -41,42 +41,40 @@ export default function PostList({ posts, tags, pagination }: Props) {
         ))}
       </ul>
       <style jsx>{`
-        .container {
+        .blog {
           display: flex;
-          margin: 0 auto;
-          max-width: 1200px;
-          width: 100%;
-          padding: 4rem 1.5rem 0;
-        }
-        ul {
-          margin: 0;
-          padding: 0;
-        }
-        li {
-          list-style: none;
+          padding: 4rem 0 0;
         }
         .posts {
           display: flex;
           flex-direction: column;
           flex: 1 1 auto;
-          max-width: 65ch;
-          margin-right: auto;
-          margin-left: auto;
+        }
+        .post-list {
+          flex: 1 0 auto;
+          margin: 0;
+          padding: 0;
+          list-style: none;
         }
         .posts li {
           margin-bottom: 1.5rem;
         }
-        .post-list {
-          flex: 1 0 auto;
-        }
         .categories {
           display: none;
+          margin: 0;
+          padding: 0;
+          list-style: none;
         }
         .categories li {
           margin-bottom: 0.75em;
         }
 
         @media (min-width: 769px) {
+          .posts {
+            max-width: 65ch;
+            margin-right: auto;
+            padding-right: 2rem;
+          }
           .categories {
             display: block;
           }

@@ -12,7 +12,11 @@ export default function Index() {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      <h1>About Us</h1>
+      <section className="site-section">
+        <div className="site-container">
+          <h1>About Us</h1>
+        </div>
+      </section>
       <section className="site-section">
         <div className="site-container">
           <div className="site-row items-start">
