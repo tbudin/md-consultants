@@ -32,8 +32,8 @@ collections:
             widget: "list"
             summary: "{{fields.keyword.keyword}}"
             field:
-              label: Keyword
-              name: keyword
+              label: "Keyword"
+              name: "keyword"
               widget: "string"
           - label: "Twitter account"
             name: "twitter_account"
@@ -87,6 +87,64 @@ collections:
                 name: "name"
                 widget: "string"
                 hint: "Tag name for displaying on the site"
+
+  - name: "pages"
+    label: "Pages"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "home"
+        label: "Home"
+        file: "content/pages/home.json"
+        description: "Homepage set-up"
+        fields:
+          - name: hero
+            label: Hero
+            label_singular: Hero
+            fields:
+              - name: heading
+                label: Heading
+                widget: string
+              - name: paragraph
+                label: Paragraph
+                widget: text
+              - name: text
+                label: Button text
+                widget: string
+              - name: path
+                label: Button path
+                widget: string
+                hint: "Don't add the trailing /"
+          - name: subhero
+            label: Sub Hero
+            fields:
+              - name: heading
+                label: Heading
+                widget: string
+              - name: paragraph
+                label: Paragraph
+                widget: text
+          - name: featuresgrid
+            label: Features Grid
+            fields:
+              - name: heading
+                label: Heading
+                widget: string
+              - name: paragraph
+                label: Paragraph
+                widget: text
+              - name: features
+                label: Features
+                widget: list
+                summary: "{{fields.heading}}"
+                fields:
+                  - name: heading
+                    label: Heading
+                    widget: string
+                  - name: paragraph
+                    label: Paragraph
+                    widget: text
 
   - name: "posts"
     label: "Posts"

@@ -11,6 +11,8 @@ import { Split } from "../components/sections/Split";
 import { FeaturesList } from "../components/sections/FeaturesList";
 import { Faq } from "../components/sections/Faq";
 import Cta from "../components/sections/Cta";
+// Data
+import home from "../lib/home";
 
 export default function Index() {
   return (
@@ -18,9 +20,9 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <Hero heading="We assist international organizations auditing global financial institutions." paragraph="Internationally recognized third-party for auditing financial institutions." href="/contact-us" text="Book a call" />
-      <SubHero heading="Sub Hero Heading" paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
-      <FeaturesGrid heading="Features Grid Heading" paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
+      <Hero heading={ home.hero.heading } paragraph={ home.hero.paragraph } href={ home.hero.path } text={ home.hero.text } />
+      <SubHero heading={ home.subhero.heading } paragraph={ home.subhero.paragraph } />
+      <FeaturesGrid heading={ home.featuresgrid.heading } paragraph={ home.featuresgrid.paragraph } />
       <Split />
       <FeaturesList heading={"Features List Heading"} paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
       <Faq heading="FAQ heading" paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro in facere ratione, libero aliquam ad fugiat doloremque eum quos, distinctio illo veritatis esse possimus sunt accusamus id maiores nobis." />
