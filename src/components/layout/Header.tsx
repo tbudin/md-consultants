@@ -1,20 +1,52 @@
 import React from "react";
+import Link from "next/link";
 import { Lockup } from "../Lockup";
 
 export function Header() {
   return (
-    <div className="headerInner">
+    <div className="header-inner">
       <Lockup fill={"blue"} />
+      <nav className="header-nav">
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="/about-us">
+          <a>About Us</a>
+        </Link>
+        <Link href="/contact-us">
+          <a>Contact Us</a>
+        </Link>
+        <Link href="/posts">
+          <a>Our Blog</a>
+        </Link>
+      </nav>
       <style jsx>
       {`
-        .headerInner {
+        .header-inner {
+          max-width: 1120px;
+          margin: 0 auto;
           padding: 1.5rem 1rem;
           text-align: right;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
         }
-        @media (min-width: 769px) {
-          .headerInner {
+        .header-nav {
+          display: none;
+        }
+        @media (min-width: 1025px) {
+          .header-inner {
             padding: 1rem 4rem;
-            text-align: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--text-color-lighter);
+          }
+          .header-nav {
+            display: block;
+            margin-left: -1rem;
+            margin-right: -1rem;
+          }
+          .header-nav a {
+            padding: 0 1rem;
           }
         }
       `}

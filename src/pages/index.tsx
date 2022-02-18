@@ -3,6 +3,9 @@ import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import ButtonLink from "../components/Button";
+import { Faq } from "../components/sections/Faq";
+import { FeaturesList } from "../components/sections/FeaturesList";
+import { FeaturesGrid } from "../components/sections/FeaturesGrid";
 
 export default function Index() {
   return (
@@ -36,7 +39,15 @@ export default function Index() {
       </section>
       <section className="site-section">
         <div className="site-container">
-          <div className="site-row items-center">
+          <div className="heading-center">
+            <h2>Section heading</h2>
+          </div>
+          <FeaturesGrid />
+        </div>
+      </section>
+      <section className="site-section">
+        <div className="site-container">
+          <div className="site-row items-center pt-md pb-md">
             <div className="row-content">
               <h2>Section heading</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi omnis voluptate itaque, est aperiam alias dolorem laboriosam. Quos odit rem molestias et inventore dolorum repudiandae, vel rerum. Dolores, perspiciatis.</p>
@@ -51,10 +62,25 @@ export default function Index() {
               </div>
             </div>
           </div>
-          <div className="site-row items-center">
+          <div className="site-row items-center pt-md pb-md">
             <div className="row-content">
               <h2>Section heading</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi omnis voluptate itaque, est aperiam alias dolorem laboriosam. Quos odit rem molestias et inventore dolorum repudiandae, vel rerum. Dolores, perspiciatis.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dignissimos ipsum ipsa! Cupiditate quia a eum repellat maxime velit aliquid, magni consequuntur recusandae, quidem temporibus earum facilis labore, reiciendis sit.</p>
+            </div>
+            <div className="row-illustration">
+              <div className="image-wrap">
+                <img
+                  src="/images/financial-institutions.jpg"
+                  alt="Financial institution building over a blue sky"
+                  className="imageCover"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="site-row items-center pt-md pb-md">
+            <div className="row-content">
+              <h2>Section heading</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum perspiciatis pariatur expedita illum blanditiis necessitatibus minima. Illo repellat quis corrupti alias, impedit assumenda quidem veritatis, eveniet iste sed similique commodi!</p>
             </div>
             <div className="row-illustration">
               <div className="image-wrap">
@@ -75,22 +101,18 @@ export default function Index() {
               <h2>Section heading</h2>
             </div>
             <div className="row-illustration">
-              <ul className="features-list">
-                <li className="features-item">
-                  <h3 className="features-heading text-md">Feature heading</h3>
-                  <p className="features-content text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non architecto, soluta voluptates culpa vitae, reprehenderit fugit optio exercitationem veritatis blanditiis corporis sunt! Quidem totam consectetur voluptate ad error minus.</p>
-                </li>
-                <li className="features-item">
-                  <h3 className="features-heading text-md">Feature heading</h3>
-                  <p className="features-content text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non architecto, soluta voluptates culpa vitae, reprehenderit fugit optio exercitationem veritatis blanditiis corporis sunt! Quidem totam consectetur voluptate ad error minus.</p>
-                </li>
-                <li className="features-item">
-                  <h3 className="features-heading text-md">Feature heading</h3>
-                  <p className="features-content text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque non architecto, soluta voluptates culpa vitae, reprehenderit fugit optio exercitationem veritatis blanditiis corporis sunt! Quidem totam consectetur voluptate ad error minus.</p>
-                </li>
-              </ul>
+              <FeaturesList />
             </div>
           </div>
+        </div>
+      </section>
+      <section className="site-section">
+        <div className="site-container">
+          <div className="heading-center">
+            <h2>Section heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro in facere ratione, libero aliquam ad fugiat doloremque eum quos, distinctio illo veritatis esse possimus sunt accusamus id maiores nobis.</p>
+          </div>
+          <Faq />
         </div>
       </section>
       <section className="site-section">
@@ -127,23 +149,6 @@ export default function Index() {
           margin-right: auto;
           z-index: 1;
         }
-
-        .features-item {
-          display: flex;
-          flex-direction: row;
-          align-items: flex-start;
-          justify-content: flex-start;
-          padding: 1rem 0 3rem 0;
-          border-top: 1px solid var(--text-color);
-        }
-        .features-heading {
-          width: 40%;
-          padding-right: 1rem;
-        }
-        .features-content {
-          width: 60%;
-        }
-
         @media (min-width: 1025px) {
           .heroInner {
             margin: auto;

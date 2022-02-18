@@ -85,22 +85,7 @@ export default function Navigation() {
 
             @media (min-width: 1025px) {
               .nav-container {
-                width: 100%;
-                display: block;
-                height: 100%;
-              }
-              ul {
-                opacity: 1;
-                top: 0;
-                display: flex;
-                justify-content: center;
-                transform: translateY(0);
-                background-color: transparent;
-                position: sticky;
-                max-height: 100vh;
-              }
-              li {
-                font-size: 1rem;
+                display: none;
               }
             }
           `}
