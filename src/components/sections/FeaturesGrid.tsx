@@ -37,10 +37,12 @@ export function FeaturesGrid({ heading, paragraph, features }: Props) {
           padding: 1.25rem;
           background-color: var(--text-color);
           color: var(--bg-color);
+          grid-column: span 3;
         }
-        .features-grid-heading {
-        }
-        .features-grid-content {
+        @media (min-width: 769px) {
+          .features-grid-item {
+            grid-column: span 1;
+          }
         }
         `}
       </style>

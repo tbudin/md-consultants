@@ -10,11 +10,13 @@ type Props = {
 export default function Hero({ heading, paragraph, href, text }: Props) {
   return (
   <section className="hero">
-    <div className="heroInner">
-      <h1 className="heroHeading">{ heading }</h1>
-      <div className="heroContent">
-        <p>{ paragraph }</p>
-        <ButtonLink type="" href={ href } children={ text }></ButtonLink>
+    <div className="site-container">
+      <div className="heroInner">
+        <h1 className="heroHeading">{ heading }</h1>
+        <div className="heroContent">
+          <p>{ paragraph }</p>
+          <ButtonLink type="" href={ href } children={ text }></ButtonLink>
+        </div>
       </div>
     </div>
     <style jsx>{`
@@ -26,13 +28,13 @@ export default function Hero({ heading, paragraph, href, text }: Props) {
       }
       .heroInner {
         position: relative;
-        padding: 2rem;
-        margin: 2rem;
+        padding: 2rem 0;
+        text-align: center;
+        width: 100%;
       }
       .heroHeading {
         font-size: 3rem;
         z-index: 1;
-        text-align: center;
       }
       .heroContent {
         font-size: 1.25rem;
@@ -41,26 +43,10 @@ export default function Hero({ heading, paragraph, href, text }: Props) {
         margin-right: auto;
         z-index: 1;
       }
-      @media (min-width: 1025px) {
+      @media (min-width: 769px) {
         .heroInner {
-          margin: auto;
-          max-width: 1120px;
-          padding: 4rem;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1rem;
-          grid-auto-rows: minmax(120px, auto);
-          align-items: center;
-        }
-        .heroHeading {
-          grid-column: 1 / 4;
-          grid-row: 1;
-        }
-        .heroContent {
-          grid-column: 2 / 4;
-          grid-row: 2;
-          margin-left: auto;
-          margin-right: 0;
+          padding: 4rem 0;
+          text-align: left;
         }
       }
     `}</style>

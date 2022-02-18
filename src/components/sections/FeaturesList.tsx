@@ -28,27 +28,38 @@ export function FeaturesList({ heading, paragraph, features }: Props) {
       {`
       .features-list {
         max-width: 720px;
-        margin: 0 auto;
+        margin: 4rem auto 0;
         list-style: none;
         padding: 0;
       }
       .features-list-item {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         padding: 1rem 0 3rem 0;
         border-top: 1px solid var(--text-color);
+        text-align: left;
       }
       .features-list-item:last-of-type {
         padding-bottom: 0;
       }
-      .features-list-heading {
-        width: 40%;
-        padding-right: 1rem;
+      @media (min-width: 769px) {
+        .features-list {
+          margin: 0 auto;
+        }
       }
-      .features-list-content {
-        width: 60%;
+      @media (min-width: 1025px) {
+        .features-grid-item {
+          flex-direction: row;
+        }
+        .features-list-heading {
+          width: 40%;
+          padding-right: 1rem;
+        }
+        .features-list-content {
+          width: 60%;
+        }
       }
       `}
     </style>
