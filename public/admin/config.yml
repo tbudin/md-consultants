@@ -108,7 +108,7 @@ collections:
                 widget: string
               - name: paragraph
                 label: Paragraph
-                widget: text
+                widget: string
               - name: text
                 label: Button text
                 widget: string
@@ -124,7 +124,7 @@ collections:
                 widget: string
               - name: paragraph
                 label: Paragraph
-                widget: text
+                widget: string
           - name: featuresgrid
             label: Features Grid
             fields:
@@ -133,7 +133,7 @@ collections:
                 widget: string
               - name: paragraph
                 label: Paragraph
-                widget: text
+                widget: string
               - name: features
                 label: Features
                 widget: list
@@ -144,7 +144,7 @@ collections:
                     widget: string
                   - name: paragraph
                     label: Paragraph
-                    widget: text
+                    widget: string
 
   - name: "posts"
     label: "Posts"
