@@ -102,49 +102,33 @@ collections:
           - name: hero
             label: Hero
             fields:
-              - name: heading
-                label: Heading
-                widget: string
-              - name: paragraph
-                label: Paragraph
-                widget: string
-              - name: text
-                label: Button text
-                widget: string
-              - name: path
-                label: Button path
-                widget: string
-                hint: "Don't add the trailing /"
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
+              - { label: "Button text", name: text, widget: string }
+              - {
+                  label: "Button path",
+                  name: path,
+                  widget: string,
+                  hint: "Don't add the trailing /",
+                }
           - name: subhero
             label: Sub Hero
             fields:
-              - name: heading
-                label: Heading
-                widget: string
-              - name: paragraph
-                label: Paragraph
-                widget: string
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
           - name: featuresgrid
             label: Features Grid
             fields:
-              - name: heading
-                label: Heading
-                widget: string
-              - name: paragraph
-                label: Paragraph
-                widget: string
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
               - name: features
                 label: Features
                 widget: list
                 label_singular: field
                 summary: "{{field.heading}}"
                 fields:
-                  - name: heading
-                    label: Heading
-                    widget: string
-                  - name: paragraph
-                    label: Paragraph
-                    widget: string
+                  - { label: Heading, name: heading, widget: string }
+                  - { label: Paragraph, name: paragraph, widget: string }
 
   - name: "posts"
     label: "Posts"
