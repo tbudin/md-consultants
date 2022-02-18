@@ -1,9 +1,10 @@
 type Props = {
   heading: string;
   paragraph: string;
+  steps;
 };
 
-export function Timeline({ heading, paragraph }: Props) {
+export function Timeline({ heading, paragraph, steps }: Props) {
   return (
     <section className="site-section">
       <div className="site-container">
@@ -12,30 +13,14 @@ export function Timeline({ heading, paragraph }: Props) {
           <p>{ paragraph }</p>
         </div>
         <ul className="timeline">
-          <li className="timeline-item">
-            <div className="no">
-              <h3 className="nu text-md mt-0">Date 1</h3>
-              <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo, dolorum culpa nemo atque tempora perferendis ut dolores mollitia rerum voluptatem, iste expedita omnis natus voluptate distinctio vitae, maiores quisquam.</div>
-            </div>
-          </li>
-          <li className="timeline-item">
-            <div className="no">
-              <h3 className="nu text-md mt-0">Date 2</h3>
-              <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit ad impedit perspiciatis, quae quas ipsam id repellat. Fugiat tempore dicta, voluptate aspernatur expedita hic sequi sint quod ea quo!</div>
-            </div>
-          </li>
-          <li className="timeline-item">
-            <div className="no">
-              <h3 className="nu text-md mt-0">Date 3</h3>
-              <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illo, dolorum culpa nemo atque tempora perferendis ut dolores mollitia rerum voluptatem, iste expedita omnis natus voluptate distinctio vitae, maiores quisquam.</div>
-            </div>
-          </li>
-          <li className="timeline-item">
-            <div className="no">
-              <h3 className="nu text-md mt-0">Date 4</h3>
-              <div className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit ad impedit perspiciatis, quae quas ipsam id repellat. Fugiat tempore dicta, voluptate aspernatur expedita hic sequi sint quod ea quo!</div>
-            </div>
-          </li>
+          {steps.map((it, i) => (
+            <li className="timeline-item" key={i}>
+              <div className="no">
+                <h3 className="nu text-md mt-0">{ it.heading }</h3>
+                <div className="text-sm">{ it.paragraph }</div>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
       <style jsx>{`

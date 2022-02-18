@@ -23,10 +23,10 @@ export default function Index() {
       <Hero heading={ home.hero.heading } paragraph={ home.hero.paragraph } href={ home.hero.path } text={ home.hero.text } />
       <SubHero heading={ home.subhero.heading } paragraph={ home.subhero.paragraph } />
       <FeaturesGrid heading={ home.featuresgrid.heading } paragraph={ home.featuresgrid.paragraph } features={ home.featuresgrid.features } />
-      <Split />
-      <FeaturesList heading={"Features List Heading"} paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit." />
-      <Faq heading="FAQ heading" paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro in facere ratione, libero aliquam ad fugiat doloremque eum quos, distinctio illo veritatis esse possimus sunt accusamus id maiores nobis." />
-      <Cta heading="CTA heading" href="/contact-us" text="Book a call" />
+      <Split sections={ home.split } />
+      <FeaturesList heading={ home.featureslist.heading } paragraph={ home.featureslist.paragraph } features={ home.featureslist.features } />
+      <Faq heading={ home.faq.heading } paragraph={ home.faq.paragraph } questions={ home.faq.questions } />
+      <Cta heading={ home.cta.heading } href={ home.cta.path } text={ home.cta.text } />
     </Layout>
   );
 }

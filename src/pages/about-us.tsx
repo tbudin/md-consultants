@@ -7,6 +7,8 @@ import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import Title from "../components/sections/Title";
 import { Split } from "../components/sections/Split";
 import { Timeline } from "../components/sections/Timeline";
+// Data
+import about from "../lib/about";
 
 export default function Index() {
   const url = "/about-us";
@@ -16,9 +18,9 @@ export default function Index() {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      <Title heading="About us" />
-      <Split />
-      <Timeline heading="Timeline Heading" paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis voluptate et nemo, repudiandae ea explicabo odio, reprehenderit suscipit optio aperiam eaque possimus culpa a delectus tempora placeat inventore porro." />
+      <Title heading={ about.title.heading } paragraph={ about.title.paragraph } />
+      <Split sections={ about.split } />
+      <Timeline heading={ about.timeline.heading } paragraph={ about.timeline.paragraph } steps={ about.timeline.steps } />
     </Layout>
   );
 }

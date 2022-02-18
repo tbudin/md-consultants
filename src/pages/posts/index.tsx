@@ -1,9 +1,12 @@
 import { GetStaticProps } from "next";
+// Sections
 import Layout from "../../components/layout/Layout";
 import BasicMeta from "../../components/meta/BasicMeta";
 import OpenGraphMeta from "../../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../../components/meta/TwitterCardMeta";
 import PostList from "../../components/posts/PostList";
+import Title from "../../components/sections/Title";
+// Data
 import config from "../../lib/config";
 import { countPosts, listPostContent, PostContent } from "../../lib/posts";
 import { listTags, TagContent } from "../../lib/tags";
@@ -24,9 +27,9 @@ export default function Index({ posts, tags, pagination }: Props) {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
+      <Title heading="Our blog" paragraph="Thoughts" />
       <section className="site-section">
         <div className="site-container">
-          <h1>Our Blog</h1>
           <PostList posts={posts} tags={tags} pagination={pagination} />
         </div>
       </section>

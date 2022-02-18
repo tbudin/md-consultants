@@ -26,5 +26,60 @@
         "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
       }
     ]
+  },
+  "split": [
+    {
+      "heading": "Section 1",
+      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+    },
+    {
+      "heading": "Section 2",
+      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+    },
+    {
+      "heading": "Section 3",
+      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+    }
+  ],
+  "featureslist": {
+    "heading": "Features List Heading",
+    "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi omnis voluptate itaque, est aperiam alias dolorem laboriosam.",
+    "features": [
+      {
+        "heading": "Feature 1",
+        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      },
+      {
+        "heading": "Feature 2",
+        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      },
+      {
+        "heading": "Feature 3",
+        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      }
+    ]
+  },
+  "faq": {
+    "heading": "FAQ Heading",
+    "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi omnis voluptate itaque, est aperiam alias dolorem laboriosam.",
+    "questions": [
+      {
+        "question": "Question 1",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      },
+      {
+        "question": "Question 2",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      },
+      {
+        "question": "Question 3",
+        "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "CTA Heading",
+    "text": "Book a call",
+    "path": "/contact-us"
   }
 }

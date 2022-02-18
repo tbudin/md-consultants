@@ -94,10 +94,10 @@ collections:
     editor:
       preview: false
     files:
-      - name: "home"
-        label: "Home"
-        file: "content/pages/home.json"
-        description: "Homepage set-up"
+      - name: home
+        label: Home
+        file: content/pages/home.json
+        description: Homepage set-up
         fields:
           - name: hero
             label: Hero
@@ -132,6 +132,92 @@ collections:
                 fields:
                   - { label: Heading, name: heading, widget: string }
                   - { label: Paragraph, name: paragraph, widget: string }
+          - name: split
+            label: Split section
+            widget: "list"
+            label_singular: section
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
+          - name: featureslist
+            label: Features List
+            widget: "object"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
+              - name: features
+                label: Features
+                widget: list
+                label_singular: field
+                summary: "{{fields.heading}}"
+                fields:
+                  - { label: Heading, name: heading, widget: string }
+                  - { label: Paragraph, name: paragraph, widget: string }
+          - name: faq
+            label: FAQ
+            widget: "object"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
+              - name: questions
+                label: Questions
+                widget: list
+                label_singular: question
+                summary: "{{fields.question}}"
+                fields:
+                  - { label: Question, name: question, widget: string }
+                  - { label: Answer, name: answer, widget: string }
+          - name: cta
+            label: CTA
+            widget: "object"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: "Button text", name: text, widget: string }
+              - {
+                  label: "Button path",
+                  name: path,
+                  widget: string,
+                  hint: "Don't add the trailing /",
+                }
+      - name: about
+        label: About
+        file: "content/pages/about.json"
+        description: "About page set-up"
+        fields:
+          - name: title
+            label: Title
+            widget: "object"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
+          - name: split
+            label: Split section
+            widget: "list"
+            label_singular: section
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
+          - name: timeline
+            label: Timeline
+            widget: "list"
+            label_singular: step
+            summary: "{{fields.heading}}"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
+      - name: contact
+        label: Contact
+        file: "content/pages/contact.json"
+        description: "Contact page set-up"
+        fields:
+          - name: title
+            label: Title
+            widget: "object"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Paragraph, name: paragraph, widget: string }
 
   - name: "posts"
     label: "Posts"

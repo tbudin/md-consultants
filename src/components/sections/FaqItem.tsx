@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 type Props = {
-  heading: string;
-  content;
+  question: string;
+  answer;
 };
 
-export function FaqItem({ heading, content }: Props) {
+export function FaqItem({ question, answer }: Props) {
   const [active, setActive] = useState(false);
   const toggleClass = () => {
     setActive(!active)
@@ -13,10 +13,10 @@ export function FaqItem({ heading, content }: Props) {
   return (
     <li className={`faq-item ${active ? "faq-active" : null }`} onClick={toggleClass}>
       <div className="faq-title">
-        <h3 className="text-md">{ heading }</h3>
+        <h3 className="text-md">{ question }</h3>
         <div className="faq-cross"></div>
       </div>
-      <div className="faq-content opacity-70">{ content }</div>
+      <div className="faq-content opacity-70"><p>{ answer }</p></div>
     <style jsx>{`
       .faq-item {
         margin: 0;
