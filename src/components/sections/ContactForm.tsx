@@ -15,38 +15,28 @@ export default function ContactForm({ heading, paragraph }: Props) {
             <form
               name="contact"
               method="POST"
-              action="/contact/success"
+              action="/contact-us/success"
               netlify-honeypot="bot-field"
               data-netlify="true"
             >
-              <div className="hidden">
-                <label>
-                  Should you fill this one? <input name="bot-field" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  Name: <input type="text" name="name" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  Email: <input type="text" name="email" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  Message: <textarea name="message"></textarea>
-                </label>
-              </div>
-              <div>
-                <button className="btn" type="submit">
-                  <svg className="btn-svg" xmlns="http://www.w3.org/2000/svg">
-                    <rect className="btn-shape" />
-                  </svg>
-                  <div className="btn-text">Submit</div>
-                </button>
-              </div>
+              <label className="hidden">
+                Should you fill this one? <input name="bot-field" />
+              </label>
+              <label>
+                Name: <input type="text" name="name" />
+              </label>
+              <label>
+                Email: <input type="text" name="email" />
+              </label>
+              <label>
+                Message: <textarea name="message"></textarea>
+              </label>
+              <button className="btn" type="submit">
+                <svg className="btn-svg" xmlns="http://www.w3.org/2000/svg">
+                  <rect className="btn-shape" />
+                </svg>
+                <div className="btn-text">Submit</div>
+              </button>
             </form>
           </div>
         </div>

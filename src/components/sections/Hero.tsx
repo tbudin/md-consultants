@@ -1,4 +1,5 @@
 import ButtonLink from "../Button";
+import Building from "../../../public/images/illustrations/buildings.svg"
 
 type Props = {
   heading: string;
@@ -9,43 +10,35 @@ type Props = {
 
 export default function Hero({ heading, paragraph, href, text }: Props) {
   return (
-  <section className="hero">
-    <div className="site-container">
-      <div className="heroInner">
-        <h1 className="heroHeading">{ heading }</h1>
-        <div className="heroContent">
-          <p>{ paragraph }</p>
-          <ButtonLink type="" href={ href } children={ text }></ButtonLink>
+  <section className="site-section">
+    <div className="site-container hero">
+      <div className="site-row">
+        <div className="row-content">
+          <h1 className="text-xl">{ heading }</h1>
+          <div className="text-md">
+            <p>{ paragraph }</p>
+            <ButtonLink type="" href={ href } children={ text }></ButtonLink>
+          </div>
+        </div>
+        <div className="row-illustration">
+          <Building width={500} height={501} alt={"Building illustration"} />
         </div>
       </div>
     </div>
     <style jsx>{`
       .hero {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-content: center;
-        min-height: 80vh;
-      }
-      .heroInner {
-        position: relative;
-        padding: 2rem 0;
         text-align: center;
-        width: 100%;
       }
-      .heroHeading {
-        font-size: 3rem;
-        z-index: 1;
-      }
-      .heroContent {
-        font-size: 1.25rem;
-        max-width: 65ch;
-        margin-left: 0;
-        margin-right: auto;
-        z-index: 1;
+      .hero .row-content {
+        max-width: none;
       }
       @media (min-width: 769px) {
-        .heroInner {
-          padding: 4rem 0;
+        .hero {
+          padding-top: 4rem;
+          padding-bottom: 4rem;
           text-align: left;
         }
       }

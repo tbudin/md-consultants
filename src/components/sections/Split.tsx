@@ -10,7 +10,9 @@ export function Split({ sections }: Props) {
             <div className="site-row items-center pt-md pb-md" key={i}>
               <div className="row-content">
                 <h2>{ it.heading }</h2>
-                <p>{ it.paragraph }</p>
+                {it.paragraph.length > 0 &&
+                  <p>{ it.paragraph }</p>
+                }
               </div>
               <div className="row-illustration">
                 <div className="image-wrap">

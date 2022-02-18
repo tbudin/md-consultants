@@ -12,7 +12,9 @@ export function Faq({ heading, paragraph, questions }: Props) {
       <div className="site-container">
         <div className="heading-center">
           <h2>{ heading }</h2>
-          <p>{ paragraph }</p>
+          {paragraph.length > 0 &&
+            <p>{ paragraph }</p>
+          }
         </div>
         <ul className="faq">
           {questions.map((it, i) => (

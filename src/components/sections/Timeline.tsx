@@ -10,7 +10,9 @@ export function Timeline({ heading, paragraph, steps }: Props) {
       <div className="site-container">
         <div className="heading-center">
           <h2>{ heading }</h2>
-          <p>{ paragraph }</p>
+          {paragraph.length > 0 &&
+            <p>{ paragraph }</p>
+          }
         </div>
         <ul className="timeline">
           {steps.map((it, i) => (

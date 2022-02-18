@@ -8,19 +8,21 @@ export function FeaturesList({ heading, paragraph, features }: Props) {
     <section className="site-section">
     <div className="site-container">
       <div className="site-row items-start">
-      <div className="row-content">
-          <h2>{ heading }</h2>
-          <p>{ paragraph }</p>
-        </div>
-        <div className="row-illustration">
-        <ul className="features-list">
-          {features.map((it, i) => (
-            <li className="features-list-item" key={i}>
-              <h3 className="features-list-heading text-md">{ it.heading }</h3>
-              <p className="features-list-content text-sm opacity-70">{ it.paragraph }</p>
-            </li>
-          ))}
-        </ul>
+        <div className="row-content">
+            <h2>{ heading }</h2>
+            {paragraph.length > 0 &&
+              <p>{ paragraph }</p>
+            }
+          </div>
+          <div className="row-illustration">
+          <ul className="features-list">
+            {features.map((it, i) => (
+              <li className="features-list-item" key={i}>
+                <h3 className="features-list-heading text-md">{ it.heading }</h3>
+                <p className="features-list-content text-sm opacity-70">{ it.paragraph }</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
@@ -50,7 +52,7 @@ export function FeaturesList({ heading, paragraph, features }: Props) {
         }
       }
       @media (min-width: 1025px) {
-        .features-grid-item {
+        .features-list-item {
           flex-direction: row;
         }
         .features-list-heading {
