@@ -101,6 +101,7 @@ collections:
         fields:
           - name: hero
             label: Hero
+            widget: "object"
             fields:
               - { label: Heading, name: heading, widget: string }
               - { label: Paragraph, name: paragraph, widget: string }
@@ -113,11 +114,13 @@ collections:
                 }
           - name: subhero
             label: Sub Hero
+            widget: "object"
             fields:
               - { label: Heading, name: heading, widget: string }
               - { label: Paragraph, name: paragraph, widget: string }
           - name: featuresgrid
             label: Features Grid
+            widget: "object"
             fields:
               - { label: Heading, name: heading, widget: string }
               - { label: Paragraph, name: paragraph, widget: string }
