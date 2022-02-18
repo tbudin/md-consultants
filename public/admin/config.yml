@@ -101,7 +101,6 @@ collections:
         fields:
           - name: hero
             label: Hero
-            label_singular: Hero
             fields:
               - name: heading
                 label: Heading
@@ -137,7 +136,8 @@ collections:
               - name: features
                 label: Features
                 widget: list
-                summary: "{{fields.heading}}"
+                label_singular: field
+                summary: "{{field.heading}}"
                 fields:
                   - name: heading
                     label: Heading
