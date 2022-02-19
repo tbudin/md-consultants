@@ -1,5 +1,3 @@
-import Globe from "../../assets/globe-icon.svg";
-
 type Props = {
   heading: string;
   paragraph: string;
