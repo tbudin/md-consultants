@@ -80,7 +80,7 @@ export default function Navigation() {
             .active::after {
               position: absolute;
               transform: translateX(50%);
-              content: url(./images/icons/square-dot.svg);
+              content: url(./images/illustrations/square-dot.svg);
             }
 
             @media (min-width: 1025px) {
