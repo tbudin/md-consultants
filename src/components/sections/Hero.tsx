@@ -1,5 +1,5 @@
 import ButtonLink from "../Button";
-import Building from "../../../public/images/illustrations/buildings.svg";
+import Building from "../../../public/assets/illustrations/buildings.svg";
 import Globe from "../../assets/globe-icon.svg";
 
 type Props = {
