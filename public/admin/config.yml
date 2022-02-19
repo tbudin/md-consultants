@@ -108,8 +108,8 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                media_folder: /public/assets/images
-                default: /public/assets/images/buildings.png
+                media_folder: /images
+                default: /images/buildings.png
                 choose_url: false
               - { label: "Button text", name: text, widget: string }
               - {
@@ -127,8 +127,8 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                media_folder: /public/assets/images
-                default: "public/assets/images/financial-institutions.jpg"
+                media_folder: /images
+                default: /images/financial-institutions.jpg
                 choose_url: false
           - name: featuresgrid
             label: Features Grid
@@ -147,8 +147,8 @@ collections:
                   - label: Icon
                     name: icon
                     widget: image
-                    media_folder: /public/assets/icons
-                    default: /public/assets/icons/globe.png
+                    media_folder: /icons
+                    default: /icons/globe.png
                     choose_url: false
           - name: split
             label: Split section
@@ -161,8 +161,8 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                media_folder: /public/assets/images
-                default: "public/assets/images/financial-institutions.jpg"
+                media_folder: /images
+                default: "/images/financial-institutions.jpg"
                 choose_url: false
           - name: featureslist
             label: Features List
@@ -226,8 +226,8 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                media_folder: /public/assets/images
-                default: "public/assets/images/financial-institutions.jpg"
+                media_folder: /images
+                default: "/images/financial-institutions.jpg"
                 choose_url: false
           - name: timeline
             label: Timeline
@@ -258,8 +258,8 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "content/posts/"
-    media_folder: "public/assets/posts"
-    public_folder: "/assets/posts"
+    media_folder: public/assets/posts
+    public_folder: /assets/posts
     extension: "mdx"
     format: "frontmatter"
     create: true
