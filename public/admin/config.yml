@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: master
-media_folder: public/images
-public_folder: /images
+media_folder: public/assets
+public_folder: /assets
 publish_mode: editorial_workflow
 
 collections:
@@ -41,6 +41,16 @@ collections:
           - label: "GitHub account"
             name: "github_account"
             widget: "string"
+
+  - name: "icons"
+    label: "Icons"
+    folder: "public/assets/icons"
+    delete: false
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Icon", name: "icon", widget: "image" }
 
   - name: "meta"
     label: "Meta"
@@ -92,7 +102,7 @@ collections:
     label: "Pages"
     delete: false
     editor:
-      preview: true
+      preview: false
     files:
       - name: home
         label: Home
@@ -132,6 +142,13 @@ collections:
                 fields:
                   - { label: Heading, name: heading, widget: string }
                   - { label: Paragraph, name: paragraph, widget: string }
+                  - label: Icon
+                    name: icon
+                    widget: relation
+                    collection: "icons"
+                    search_fields: ["name"]
+                    value_field: "name"
+                    display_fields: ["name"]
           - name: split
             label: Split section
             widget: "list"
@@ -228,8 +245,8 @@ collections:
   - name: "posts"
     label: "Posts"
     folder: "content/posts/"
-    media_folder: ""
-    public_folder: ""
+    media_folder: "public/assets/posts"
+    public_folder: "/assets/posts"
     extension: "mdx"
     format: "frontmatter"
     create: true

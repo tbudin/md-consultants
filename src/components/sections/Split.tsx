@@ -17,7 +17,7 @@ export function Split({ sections }: Props) {
               <div className="row-illustration">
                 <div className="image-wrap">
                   <img
-                    src="/images/financial-institutions.jpg"
+                    src="/assets/images/financial-institutions.jpg"
                     alt="Financial institution building over a blue sky"
                     className="imageCover"
                   />

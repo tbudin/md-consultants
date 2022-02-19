@@ -9,7 +9,7 @@ export default function SubHero({ heading, paragraph }: Props) {
       <div className="site-container subHero">
         <div className="subHero-img image-wrap">
           <img
-            src="/images/financial-institutions.jpg"
+            src="/assets/images/financial-institutions.jpg"
             alt="Financial institution building over a blue sky"
             className="imageCover"
           />
