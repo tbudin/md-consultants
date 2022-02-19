@@ -1,5 +1,4 @@
 import ButtonLink from "../Button";
-import Building from "../../../public/assets/illustrations/buildings.svg";
 import Globe from "../../assets/globe-icon.svg";
 
 type Props = {
@@ -7,9 +6,10 @@ type Props = {
   paragraph: string;
   href: string;
   text: string;
+  image: string;
 };
 
-export default function Hero({ heading, paragraph, href, text }: Props) {
+export default function Hero({ heading, paragraph, href, text, image }: Props) {
   return (
   <section className="site-section">
     <div className="site-container hero">
@@ -22,7 +22,7 @@ export default function Hero({ heading, paragraph, href, text }: Props) {
           </div>
         </div>
         <div className="row-illustration">
-          <Building alt={"Building illustration"} />
+          <img src={ image} alt={ heading } />
         </div>
       </div>
       <ul className="partners">

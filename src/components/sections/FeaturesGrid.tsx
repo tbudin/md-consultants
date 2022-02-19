@@ -19,7 +19,7 @@ export function FeaturesGrid({ heading, paragraph, features }: Props) {
         <ul className="features-grid">
           {features.map((it, i) => (
             <li className="features-grid-item" key={i}>
-              <Globe width={64} height={64} />
+              <img src={ it.image } width={64} height={64} alt={ heading } />
               <h3 className="features-grid-heading text-md">{ it.heading }</h3>
               <p className="features-grid-content text-sm opacity-70">{ it.paragraph }</p>
             </li>

@@ -42,16 +42,6 @@ collections:
             name: "github_account"
             widget: "string"
 
-  - name: "icons"
-    label: "Icons"
-    folder: "public/assets/icons"
-    delete: false
-    editor:
-      preview: false
-    fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Icon", name: "icon", widget: "image" }
-
   - name: "meta"
     label: "Meta"
     delete: false
@@ -115,6 +105,12 @@ collections:
             fields:
               - { label: Heading, name: heading, widget: string }
               - { label: Paragraph, name: paragraph, widget: string }
+              - label: Image
+                name: image
+                widget: image
+                media_folder: /public/assets/images
+                default: /public/assets/images/buildings.png
+                choose_url: false
               - { label: "Button text", name: text, widget: string }
               - {
                   label: "Button path",
@@ -128,6 +124,12 @@ collections:
             fields:
               - { label: Heading, name: heading, widget: string }
               - { label: Paragraph, name: paragraph, widget: string }
+              - label: Image
+                name: image
+                widget: image
+                media_folder: /public/assets/images
+                default: "public/assets/images/financial-institutions.jpg"
+                choose_url: false
           - name: featuresgrid
             label: Features Grid
             widget: "object"
@@ -144,11 +146,10 @@ collections:
                   - { label: Paragraph, name: paragraph, widget: string }
                   - label: Icon
                     name: icon
-                    widget: relation
-                    collection: "icons"
-                    search_fields: ["name"]
-                    value_field: "name"
-                    display_fields: ["name"]
+                    widget: image
+                    media_folder: /public/assets/icons
+                    default: /public/assets/icons/globe.png
+                    choose_url: false
           - name: split
             label: Split section
             widget: "list"
@@ -157,6 +158,12 @@ collections:
             fields:
               - { label: Heading, name: heading, widget: string }
               - { label: Paragraph, name: paragraph, widget: string }
+              - label: Image
+                name: image
+                widget: image
+                media_folder: /public/assets/images
+                default: "public/assets/images/financial-institutions.jpg"
+                choose_url: false
           - name: featureslist
             label: Features List
             widget: "object"
@@ -216,6 +223,12 @@ collections:
             fields:
               - { label: Heading, name: heading, widget: string }
               - { label: Paragraph, name: paragraph, widget: string }
+              - label: Image
+                name: image
+                widget: image
+                media_folder: /public/assets/images
+                default: "public/assets/images/financial-institutions.jpg"
+                choose_url: false
           - name: timeline
             label: Timeline
             widget: "object"

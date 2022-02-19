@@ -1,16 +1,17 @@
 type Props = {
   heading: string;
   paragraph: string;
+  image: string;
 };
 
-export default function SubHero({ heading, paragraph }: Props) {
+export default function SubHero({ heading, paragraph, image }: Props) {
   return (
     <section className="site-section">
       <div className="site-container subHero">
         <div className="subHero-img image-wrap">
           <img
-            src="/assets/images/financial-institutions.jpg"
-            alt="Financial institution building over a blue sky"
+            src={ image }
+            alt={ heading }
             className="imageCover"
           />
         </div>
