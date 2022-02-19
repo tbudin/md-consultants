@@ -108,8 +108,9 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                media_folder: /images
-                default: /images/buildings.png
+                media_folder: public/assets/images
+                public_folder: /assets/images
+                default: public/assets/financial-institutions.jpg
                 choose_url: false
               - { label: "Button text", name: text, widget: string }
               - {
@@ -127,8 +128,9 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                media_folder: /images
-                default: /images/financial-institutions.jpg
+                media_folder: public/assets/images
+                public_folder: /assets/images
+                default: public/assets/financial-institutions.jpg
                 choose_url: false
           - name: featuresgrid
             label: Features Grid
@@ -147,8 +149,9 @@ collections:
                   - label: Icon
                     name: icon
                     widget: image
-                    media_folder: /icons
-                    default: /icons/globe.png
+                    media_folder: public/assets/icons
+                    public_folder: /assets/icons
+                    default: public/assets/icons/globe.png
                     choose_url: false
           - name: split
             label: Split section
@@ -161,8 +164,9 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                media_folder: /images
-                default: "/images/financial-institutions.jpg"
+                media_folder: public/assets/images
+                public_folder: /assets/images
+                default: public/assets/financial-institutions.jpg
                 choose_url: false
           - name: featureslist
             label: Features List
@@ -226,8 +230,9 @@ collections:
               - label: Image
                 name: image
                 widget: image
-                media_folder: /images
-                default: "/images/financial-institutions.jpg"
+                media_folder: public/assets/images
+                public_folder: /assets/images
+                default: public/assets/financial-institutions.jpg
                 choose_url: false
           - name: timeline
             label: Timeline

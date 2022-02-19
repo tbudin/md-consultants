@@ -6,7 +6,8 @@
   "split": [
     {
       "heading": "Section 1",
-      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!",
+      "image": "/assets/financial-institutions.jpg"
     }
   ],
   "timeline": {
