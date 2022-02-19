@@ -3,11 +3,13 @@
     "heading": "We assist international organizations auditing global financial institutions.",
     "paragraph": "Internationally recognized third-party for auditing financial institutions.",
     "text": "Book a call",
-    "path": "/contact-us"
+    "path": "/contact-us",
+    "image": "/images/building-in-clouds.jpg"
   },
   "subhero": {
     "heading": "Sub Hero Heading",
-    "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi omnis voluptate itaque, est aperiam alias dolorem laboriosam."
+    "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi omnis voluptate itaque, est aperiam alias dolorem laboriosam.",
+    "image": "/images/building-in-clouds.jpg"
   },
   "featuresgrid": {
     "heading": "Features Grid Heading",
@@ -15,30 +17,36 @@
     "features": [
       {
         "heading": "Feature 1",
-        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!",
+        "icon": "/icons/bank.png"
       },
       {
         "heading": "Feature 2",
-        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!",
+        "icon": "/icons/bank.png"
       },
       {
         "heading": "Feature 3",
-        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+        "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!",
+        "icon": "/icons/bank.png"
       }
     ]
   },
   "split": [
     {
       "heading": "Section 1",
-      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!",
+      "image": "/images/building-in-clouds.jpg"
     },
     {
       "heading": "Section 2",
-      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!",
+      "image": "/images/building-in-clouds.jpg"
     },
     {
       "heading": "Section 3",
-      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!"
+      "paragraph": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sed doloribus repudiandae itaque omnis ratione suscipit corrupti. Eius nesciunt velit tempora necessitatibus labore. Praesentium sequi neque vitae nulla! Atque, dolore!",
+      "image": "/images/building-in-clouds.jpg"
     }
   ],
   "featureslist": {
