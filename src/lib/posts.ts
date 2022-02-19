@@ -6,6 +6,7 @@ import yaml from "js-yaml";
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
 export type PostContent = {
+  readonly archive: boolean;
   readonly date: string;
   readonly title: string;
   readonly slug: string;
@@ -35,6 +36,7 @@ export function fetchPostContent(): PostContent[] {
         },
       });
       const matterData = matterResult.data as {
+        archive: boolean;
         date: string;
         title: string;
         tags: string[];

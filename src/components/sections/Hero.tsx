@@ -22,7 +22,7 @@ export default function Hero({ heading, paragraph, href, text, image }: Props) {
           </div>
         </div>
         <div className="row-illustration">
-          <img src={ image} alt={ heading } />
+          <img src={ image} alt={ heading } className="hero-illustration" />
         </div>
       </div>
       <ul className="partners">
@@ -43,6 +43,10 @@ export default function Hero({ heading, paragraph, href, text, image }: Props) {
       .hero .row-content {
         max-width: none;
       }
+      .hero-illustration {
+        width: 100%;
+        max-width: 320px;
+      }
       .partners {
         display: flex;
         justify-content: center;
@@ -59,6 +63,10 @@ export default function Hero({ heading, paragraph, href, text, image }: Props) {
           padding-top: 2rem;
           padding-bottom: 2rem;
           text-align: left;
+        }
+        .hero-illustration {
+          width: 100%;
+          max-width: 440px;
         }
       }
       @media (min-width: 1025px) {

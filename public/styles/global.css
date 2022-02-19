@@ -234,10 +234,6 @@ a:hover {
 .row-illustration {
   width: 100%;
 }
-.row-illustration svg {
-  width: 100%;
-  max-width: 320px;
-}
 .site-cta {
   padding: 3rem;
   background-color: var(--text-color);
@@ -328,10 +324,6 @@ textarea:focus {
   }
   .row-illustration form {
     text-align: left;
-  }
-  .row-illustration svg {
-    width: 100%;
-    max-width: 440px;
   }
   .site-cta {
     text-align: left;
