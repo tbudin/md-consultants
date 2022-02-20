@@ -22,6 +22,7 @@ export default function Layout({ children }: Props) {
         <meta name="application-name" content="MD Consultants"/>
         <meta name="msapplication-TileColor" content="#ffc40d"/>
         <meta name="theme-color" content="#ffe196"/>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <header className="site-header">
         <Header />
