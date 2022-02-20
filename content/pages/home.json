@@ -4,7 +4,18 @@
     "paragraph": "Internationally recognized third-party for auditing financial institutions.",
     "text": "Book a call",
     "path": "/contact-us",
-    "image": "/assets/images/buildings.png"
+    "image": "/assets/images/buildings.png",
+    "partners": [
+      {
+        "image": "/assets/logos/banque-de-france.png"
+      },
+      {
+        "image": "/assets/logos/banque-du-liban.png"
+      },
+      {
+        "image": "/assets/logos/international-monetary-fund.png"
+      }
+    ]
   },
   "subhero": {
     "heading": "Sub Hero Heading",

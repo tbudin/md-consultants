@@ -119,6 +119,17 @@ collections:
                   widget: string,
                   hint: "Don't add the trailing /",
                 }
+              - name: partners
+                label: Partners
+                widget: list
+                label_singular: partner
+                fields:
+                  - label: Image
+                    name: image
+                    widget: image
+                    media_folder: public/assets/logos
+                    public_folder: /assets/logos
+                    choose_url: false
           - name: subhero
             label: Sub Hero
             widget: "object"

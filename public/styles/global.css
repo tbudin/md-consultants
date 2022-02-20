@@ -6,6 +6,7 @@
   --font-body: 'Libre Franklin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --bg-color: #fdfbf7;
   --text-color: #1b365d;
+  --text-color-light: #6d8fbf;
   --text-color-lighter: #e5ecf7;
   --accent-color: #D4AF37;
   --accent-color-light: #f9edc8;
@@ -215,7 +216,7 @@ a:hover {
 
 /* Site sections and containers */
 .site-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 .site-container {
   max-width: 100%;
@@ -258,7 +259,6 @@ a:hover {
 }
 .image-wrap {
   height: 100%;
-  padding: 0.25rem;
 }
 
 form {
@@ -293,6 +293,9 @@ textarea:focus {
   }
   h2 {
     font-size: 2.25rem;
+  }
+  .image-wrap {
+    padding: 0.25rem;
   }
   .site-row {
     flex-direction: row;
@@ -331,6 +334,9 @@ textarea:focus {
 }
 /* Desktops Up */
 @media (min-width: 1025px) {
+  .site-section {
+    padding: 4rem 0;
+  }
   .site-container {
     max-width: 1124px;
     margin: 0 auto;

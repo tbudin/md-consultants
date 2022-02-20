@@ -20,7 +20,7 @@ export default function Index() {
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
       <TwitterCardMeta url={"/"} />
-      <Hero heading={ home.hero.heading } paragraph={ home.hero.paragraph } href={ home.hero.path } text={ home.hero.text } image={ home.hero.image } />
+      <Hero heading={ home.hero.heading } paragraph={ home.hero.paragraph } href={ home.hero.path } text={ home.hero.text } image={ home.hero.image } partners={ home.hero.partners } />
       <SubHero heading={ home.subhero.heading } paragraph={ home.subhero.paragraph } image={ home.subhero.image } />
       <FeaturesGrid heading={ home.featuresgrid.heading } paragraph={ home.featuresgrid.paragraph } features={ home.featuresgrid.features } />
       <Split sections={ home.split } />

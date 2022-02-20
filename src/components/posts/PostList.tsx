@@ -1,7 +1,7 @@
 import React from "react";
 import { PostContent } from "../../lib/posts";
 import PostItem from "./PostItem";
-import TagLink from "../TagLink";
+import TagLink from "./TagLink";
 import Pagination from "./Pagination";
 import { TagContent } from "../../lib/tags";
 
@@ -16,7 +16,18 @@ type Props = {
 export default function PostList({ posts, tags, pagination }: Props) {
   return (
     <div className={"blog"}>
+      <div className={"categories"}>
+        <h3 className="text-md">Categories</h3>
+        <ul>
+          {tags.map((it, i) => (
+            <li key={i}>
+              <TagLink tag={it} />
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className={"posts"}>
+        <h3 className="text-md">Our latest posts</h3>
         <ul className={"post-list"}>
           {posts.map((it, i) => (
             <li key={i}>
@@ -33,13 +44,6 @@ export default function PostList({ posts, tags, pagination }: Props) {
           }}
         />
       </div>
-      <ul className={"categories"}>
-        {tags.map((it, i) => (
-          <li key={i}>
-            <TagLink tag={it} />
-          </li>
-        ))}
-      </ul>
       <style jsx>{`
         .blog {
           display: flex;
@@ -61,6 +65,9 @@ export default function PostList({ posts, tags, pagination }: Props) {
         }
         .categories {
           display: none;
+          margin-bottom: 2rem;
+        }
+        .categories ul {
           margin: 0;
           padding: 0;
           list-style: none;
@@ -70,6 +77,9 @@ export default function PostList({ posts, tags, pagination }: Props) {
         }
 
         @media (min-width: 769px) {
+          .blog {
+            flex-direction: column;
+          }
           .posts {
             max-width: 65ch;
             margin-right: auto;

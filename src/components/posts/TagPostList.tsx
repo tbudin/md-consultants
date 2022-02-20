@@ -1,8 +1,8 @@
 import React from "react";
-import { PostContent } from "../lib/posts";
-import { TagContent } from "../lib/tags";
-import PostItem from "./posts/PostItem";
-import Pagination from "./posts/Pagination";
+import { PostContent } from "../../lib/posts";
+import { TagContent } from "../../lib/tags";
+import PostItem from "./PostItem";
+import Pagination from "./Pagination";
 
 type Props = {
   posts: PostContent[];
@@ -14,7 +14,7 @@ type Props = {
 };
 export default function TagPostList({ posts, tag, pagination }: Props) {
   return (
-    <div className={"container"}>
+    <div>
       <h1>
         All posts / <span>{tag.name}</span>
       </h1>
@@ -38,24 +38,15 @@ export default function TagPostList({ posts, tag, pagination }: Props) {
       />
       <style jsx>
         {`
-          .container {
-            margin: 0 auto;
-            max-width: 1200px;
-            width: 100%;
-            padding: 0 1.5rem;
-            display: flex;
-            flex-direction: column;
-          }
           h1 {
             margin: 0 0 2rem;
             padding: 0;
-            font-weight: 100;
             font-size: 1.75rem;
-            color: #9b9b9b;
+            color: var(--text-color-light);
           }
           h1 span {
             font-weight: bold;
-            color: #222;
+            color: var(--text-color);
           }
           ul {
             margin: 0;

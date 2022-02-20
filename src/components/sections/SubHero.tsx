@@ -8,6 +8,7 @@ export default function SubHero({ heading, paragraph, image }: Props) {
   return (
     <section className="site-section">
       <div className="site-container subHero">
+        <h2 className="subHero-heading">{ heading }</h2>
         <div className="subHero-img image-wrap">
           <img
             src={ image }
@@ -15,7 +16,6 @@ export default function SubHero({ heading, paragraph, image }: Props) {
             className="imageCover"
           />
         </div>
-        <h2 className="subHero-heading">{ heading }</h2>
         <p className="subHero-content">{ paragraph }</p>
       </div>
       <style jsx>{`

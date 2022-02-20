@@ -1,5 +1,5 @@
 import ButtonLink from "../Button";
-import Globe from "../../assets/globe-icon.svg";
+import { Partners } from "./Partners"
 
 type Props = {
   heading: string;
@@ -7,9 +7,10 @@ type Props = {
   href: string;
   text: string;
   image: string;
+  partners;
 };
 
-export default function Hero({ heading, paragraph, href, text, image }: Props) {
+export default function Hero({ heading, paragraph, href, text, image, partners }: Props) {
   return (
   <section className="site-section">
     <div className="site-container hero">
@@ -25,12 +26,7 @@ export default function Hero({ heading, paragraph, href, text, image }: Props) {
           <img src={ image} alt={ heading } className="hero-illustration" />
         </div>
       </div>
-      <ul className="partners">
-        <li><Globe width={64} height={64} /></li>
-        <li><Globe width={64} height={64} /></li>
-        <li><Globe width={64} height={64} /></li>
-        <li><Globe width={64} height={64} /></li>
-      </ul>
+      <Partners partners={ partners } />
     </div>
     <style jsx>{`
       .hero {
@@ -47,21 +43,8 @@ export default function Hero({ heading, paragraph, href, text, image }: Props) {
         width: 100%;
         max-width: 320px;
       }
-      .partners {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 1rem 0;
-        list-style: none;
-      }
-      .partners li {
-        margin: 0.5rem;
-      }
       @media (min-width: 769px) {
         .hero {
-          padding-top: 2rem;
-          padding-bottom: 2rem;
           text-align: left;
         }
         .hero-illustration {
@@ -71,7 +54,7 @@ export default function Hero({ heading, paragraph, href, text, image }: Props) {
       }
       @media (min-width: 1025px) {
         .hero {
-          padding-top: 4rem;
+          padding-top: 2rem;
           padding-bottom: 0;
         }
       }
