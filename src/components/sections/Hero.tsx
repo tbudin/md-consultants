@@ -17,7 +17,7 @@ export default function Hero({ heading, paragraph, href, text, image, partners }
       <div className="site-row">
         <div className="row-content">
           <h1 className="text-xl">{ heading }</h1>
-          <div className="text-md">
+          <div className="text-md mb-sm">
             <p>{ paragraph }</p>
             <ButtonLink type="" href={ href } children={ text }></ButtonLink>
           </div>
@@ -38,6 +38,7 @@ export default function Hero({ heading, paragraph, href, text, image, partners }
       }
       .hero .row-content {
         max-width: none;
+        margin-bottom: 2rem;
       }
       .hero-illustration {
         width: 100%;

@@ -18,31 +18,31 @@ export function Footer() {
           <LinkedIn width={24} height={24} fill={"white"} />
         </a>
       </div>
-      <div className="footer-container text-xs">
-        <p>© 2022 MD Consultants, all rights reserved - <a href="https://wiridis.com" rel="noopener" target="_blank">Designed & developed by Wiridis</a></p>
+      <div className="footer-container">
+        <p className="text-xs">© 2022 MD Consultants, all rights reserved <br/>- <a href="https://wiridis.com" rel="noopener" target="_blank">Designed & developed by Wiridis</a></p>
         <nav className="rc">
-        <ul>
-          <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about-us">
-              <a>About Us</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact-us">
-              <a>Contact Us</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/posts">
-              <a>Our Blog</a>
-            </Link>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about-us">
+                <a>About Us</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact-us">
+                <a>Contact Us</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/posts">
+                <a>Our Blog</a>
+              </Link>
+            </li>
+          </ul>
         </nav>
       </div>
       <style jsx>
@@ -54,9 +54,16 @@ export function Footer() {
             padding-top: 0.75rem;
             color: var(--bg-color);
           }
+          .footer-container:nth-child(2) {
+            flex-direction: column-reverse;
+          }
+          .footer-container p {
+            opacity: 0.70;
+          }
           .rc {
             margin-right: -12px;
             margin-left: -12px;
+            flex-shrink: 0;
           }
           .rc ul {
             display: flex;
@@ -65,10 +72,16 @@ export function Footer() {
             align-items: center;
             white-space: nowrap;
             margin-bottom: 0;
+            padding: 1rem 0 2rem;
             list-style: none;
           }
           .rc a {
             padding: 0 12px;
+          }
+          @media (min-width: 769px) {
+            .footer-container:nth-child(2) {
+              flex-direction: row;
+            }
           }
         `}
       </style>

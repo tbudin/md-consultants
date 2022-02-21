@@ -37,10 +37,10 @@ h6 {
   line-height: 1.15;
 }
 .text-xl {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .text-lg {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .text-md {
   font-size: 1rem;
@@ -130,6 +130,7 @@ a {
 a:active,
 a:hover {
   color: var(--accent-color);
+  opacity: 1;
 }
 .icon-link {
   color: var(--bg-color);
@@ -235,12 +236,6 @@ a:hover {
 .row-illustration {
   width: 100%;
 }
-.site-cta {
-  padding: 3rem;
-  background-color: var(--text-color);
-  color: var(--bg-color);
-  text-align: center;
-}
 .site-content {
   min-height: 90vh;
 }
@@ -328,12 +323,24 @@ textarea:focus {
   .row-illustration form {
     text-align: left;
   }
-  .site-cta {
-    text-align: left;
-  }
 }
 /* Desktops Up */
 @media (min-width: 1025px) {
+  .text-xl {
+    font-size: 3rem;
+  }
+  .text-lg {
+    font-size: 2rem;
+  }
+  .text-md {
+    font-size: 1rem;
+  }
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  .text-xs {
+    font-size: 0.75rem;
+  }
   .site-section {
     padding: 4rem 0;
   }

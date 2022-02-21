@@ -10,5 +10,6 @@
   "posts_per_page": 5,
   "twitter_account": "@twitter-account",
   "github_account": "tbudin",
-  "linkedin_account": "linkedin-slug"
+  "linkedin_account": "linkedin-slug",
+  "gtm_id": "GTM-PW8W3SG"
 }

@@ -41,6 +41,10 @@ collections:
           - label: "GitHub account"
             name: "github_account"
             widget: "string"
+          - label: "GTM ID"
+            name: "gtm_id"
+            widget: "string"
+            hint: "Format: GTM-XXXXXX"
 
   - name: "meta"
     label: "Meta"
