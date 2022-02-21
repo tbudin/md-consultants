@@ -1,4 +1,10 @@
 {
+  "cta": {
+    "heading": "CTA Heading",
+    "text": "Book a call",
+    "path": "https://calendly.com",
+    "type": "external"
+  },
   "title": {
     "heading": "Contact us",
     "paragraph": "Reach out!"

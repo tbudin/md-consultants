@@ -29,7 +29,7 @@ export default function ContactForm({ heading, paragraph }: Props) {
                 Email: <input type="text" name="email" />
               </label>
               <label>
-                Message: <textarea name="message"></textarea>
+                Message: <textarea name="message" rows="10"></textarea>
               </label>
               <button className="btn" type="submit">
                 <svg className="btn-svg" xmlns="http://www.w3.org/2000/svg">

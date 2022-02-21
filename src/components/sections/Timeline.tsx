@@ -59,8 +59,7 @@ export function Timeline({ heading, paragraph, steps }: Props) {
           left: -34px;
           width: 10px;
           height: 10px;
-          border-radius: 50%;
-          background: var(--text-color);
+          background: var(--accent-color-light);
         }
         @media (min-width: 769px) {
           .timeline-item {

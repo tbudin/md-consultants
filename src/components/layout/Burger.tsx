@@ -23,7 +23,7 @@ export default function Burger({ active, onClick }: Props) {
             position: absolute;
             width: 28px;
             height: 4px;
-            background: var(--accent-color);
+            background: var(--text-color);
             top: calc(50% - 4px / 2);
             left: calc(50% - 28px / 2);
             transition: all 150ms ease-in;

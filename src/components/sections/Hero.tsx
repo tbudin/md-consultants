@@ -6,11 +6,12 @@ type Props = {
   paragraph: string;
   href: string;
   text: string;
+  type: string;
   image: string;
   partners;
 };
 
-export default function Hero({ heading, paragraph, href, text, image, partners }: Props) {
+export default function Hero({ heading, paragraph, href, text, type, image, partners }: Props) {
   return (
   <section className="site-section">
     <div className="site-container hero">
@@ -19,7 +20,7 @@ export default function Hero({ heading, paragraph, href, text, image, partners }
           <h1 className="text-xl">{ heading }</h1>
           <div className="text-md mb-sm">
             <p>{ paragraph }</p>
-            <ButtonLink type="" href={ href } children={ text }></ButtonLink>
+            <ButtonLink color="" href={ href } children={ text } type={ type }></ButtonLink>
           </div>
         </div>
         <div className="row-illustration">

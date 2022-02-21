@@ -4,6 +4,7 @@
     "paragraph": "Internationally recognized third-party for auditing financial institutions.",
     "text": "Book a call",
     "path": "/contact-us",
+    "type": "internal",
     "image": "/assets/images/buildings.png",
     "partners": [
       {
@@ -99,6 +100,7 @@
   "cta": {
     "heading": "CTA Heading",
     "text": "Book a call",
-    "path": "/contact-us"
+    "path": "/contact-us",
+    "type": "internal"
   }
 }

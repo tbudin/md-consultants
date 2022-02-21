@@ -5,27 +5,29 @@ type Props = {
   heading: string;
   href: string;
   text: string;
+  type: string;
 };
 
-export default function Cta({ heading, href, text }: Props) {
+export default function Cta({ heading, href, text, type }: Props) {
   return (
   <section className="site-section">
-    <div className="site-container cta">
-      <div className="site-row items-center cta-inner">
-        <h2 className="row-content">{ heading }</h2>
-        <div className="row-illustration">
-          <ButtonLink type="white" href={ href } children={ text }></ButtonLink>
+    <div className="site-container">
+      <div className="cta">
+        <div className="site-row items-center cta-inner">
+          <h2 className="row-content">{ heading }</h2>
+          <div className="row-illustration">
+            <ButtonLink color="blue" href={ href } children={ text } type={ type }></ButtonLink>
+          </div>
         </div>
-      </div>
-      <div className="cta-icon">
-        <Envelop />
+        <div className="cta-icon">
+          <Envelop />
+        </div>
       </div>
     </div>
     <style jsx>{`
     .cta {
       padding: 4rem 3rem;
-      background-color: var(--text-color);
-      color: var(--bg-color);
+      background-color: var(--accent-color-light);
       text-align: center;
       position: relative;
       overflow: hidden;

@@ -123,6 +123,11 @@ collections:
                   widget: string,
                   hint: "Don't add the trailing /",
                 }
+              - label: "Link type"
+                name: "type"
+                widget: "select"
+                options: ["internal", "external"]
+                default: ["internal"]
               - name: partners
                 label: Partners
                 widget: list
@@ -223,6 +228,11 @@ collections:
                   widget: string,
                   hint: "Don't add the trailing /",
                 }
+              - label: "Link type"
+                name: "type"
+                widget: "select"
+                options: ["internal", "external"]
+                default: ["internal"]
       - name: about
         label: About
         file: "content/pages/about.json"
@@ -268,6 +278,23 @@ collections:
         file: "content/pages/contact.json"
         description: "Contact page set-up"
         fields:
+          - name: cta
+            label: CTA
+            widget: "object"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: "Button text", name: text, widget: string }
+              - {
+                  label: "Button path",
+                  name: path,
+                  widget: string,
+                  hint: "Don't add the trailing /",
+                }
+              - label: "Link type"
+                name: "type"
+                widget: "select"
+                options: ["internal", "external"]
+                default: ["external"]
           - name: title
             label: Title
             widget: "object"

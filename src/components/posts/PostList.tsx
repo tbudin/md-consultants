@@ -16,18 +16,8 @@ type Props = {
 export default function PostList({ posts, tags, pagination }: Props) {
   return (
     <div className={"blog"}>
-      <div className={"categories"}>
-        <h3 className="text-md">Categories</h3>
-        <ul>
-          {tags.map((it, i) => (
-            <li key={i}>
-              <TagLink tag={it} />
-            </li>
-          ))}
-        </ul>
-      </div>
       <div className={"posts"}>
-        <h3 className="text-md">Our latest posts</h3>
+        <h3 className="text-lg">Our latest posts</h3>
         <ul className={"post-list"}>
           {posts.map((it, i) => (
             <li key={i}>
@@ -43,6 +33,16 @@ export default function PostList({ posts, tags, pagination }: Props) {
             as: (page) => (page === 1 ? null : "/posts/page/" + page),
           }}
         />
+      </div>
+      <div className={"categories"}>
+        <h3 className="text-lg">Categories</h3>
+        <ul>
+          {tags.map((it, i) => (
+            <li key={i}>
+              <TagLink tag={it} />
+            </li>
+          ))}
+        </ul>
       </div>
       <style jsx>{`
         .blog {

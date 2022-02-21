@@ -9,7 +9,7 @@ export default function Navigation() {
   return (
     <>
       <Burger active={active} onClick={() => setActive(!active)} />
-      <div className={"nav-container " + (active ? "active" : "")}>
+      <div className={"nav-container " + (active ? "nav-active" : "")}>
         <ul>
           <li>
             <Link href="/">
@@ -53,15 +53,15 @@ export default function Navigation() {
               padding: 0;
               position: fixed;
               top: 0;
-              background-color: #faefd4;
+              background-color: var(--accent-color-light);
               display: flex;
               flex-direction: column;
               justify-content: center;
-              z-index: 1;
+              z-index: 100;
               transform: translateY(100%);
               transition: opacity 200ms;
             }
-            .active ul {
+            .nav-active ul {
               opacity: 1;
               transform: translateY(0);
               padding-right: 2rem;
@@ -74,8 +74,8 @@ export default function Navigation() {
             li:last-child {
               margin-bottom: 0;
             }
-            .active {
-              color: var(--accent-color);
+            a {
+              color: var(--text-color);
             }
             .active::after {
               position: absolute;
