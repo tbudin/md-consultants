@@ -23,10 +23,10 @@ export default function ContactForm({ heading, paragraph }: Props) {
                 Should you fill this one? <input name="bot-field" />
               </label>
               <label>
-                Name: <input type="text" name="name" />
+                Full Name: <input type="text" name="name" />
               </label>
               <label>
-                Email: <input type="text" name="email" />
+                Business Email: <input type="text" name="email" />
               </label>
               <label>
                 Message: <textarea name="message" rows={10}></textarea>
