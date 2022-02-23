@@ -76,7 +76,7 @@ export function Footer() {
             list-style: none;
           }
           .rc a {
-            padding: 0 12px;
+            padding: 12px;
           }
           @media (min-width: 769px) {
             .footer-container:nth-child(2) {

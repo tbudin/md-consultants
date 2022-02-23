@@ -6,7 +6,7 @@ export function Partners({ partners }: Props) {
   return (
     <ul className="partners">
       {partners.map((it, i) => (
-        <li key={i}><img src={ it.image } width={175} height={64} /></li>
+        <li key={i}><img src={ it.image } width={175} height={64} alt="partner logo" /></li>
       ))}
       <style jsx>{`
       .partners {
